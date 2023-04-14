@@ -84,7 +84,8 @@
 :root {
 
 	/* #c20b0b in decimal RGB */
-	--main-color: rgb(194,11,11);
+	/* --main-color: rgb(194,11,11); */
+	--main-color: #93b74b;
 	--main-color-rgb:194,11,11;
 
 	/* #5a5a5a in decimal RGB */

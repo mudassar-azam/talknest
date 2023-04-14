@@ -1,0 +1,125 @@
+
+.homecards .card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px!important;
+}
+
+.homecards .card img{
+    height: 250px;
+    object-fit: cover;
+}
+
+.slidercolumn{
+    width: 50%;
+    margin-left: 100px;
+}
+.slider-one_heading {
+    line-height: 65px;
+}
+
+.sec-title_heading {
+    color: #A6D054;
+}
+
+
+
+
+/* Turn talk into action and steadily grow your portfolio along with our community. */
+
+
+.turntalk{
+    background: black;
+    padding: 40px 0;
+}
+.turntalkleft{
+    padding-top: 20px;
+}
+.turnlefthead:hover{
+    cursor: pointer;
+}
+.turntalk h1{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.turntalkleft{
+    color: white;
+}
+
+.turnleftcontent{
+    display: none;
+    margin-top: 20px;
+    line-height: 2.2;
+    font-size: 18px;
+    font-weight: 400;
+    word-spacing: 2px;
+}
+.turnleftcontent.active{
+    display: block;
+}
+.turnlefthead{
+    margin-bottom: 25px;
+}
+
+
+
+
+/* Find Companies and Moves Suitable for  Your Investment Profile */
+
+
+
+.findcompanies{
+    padding: 100px 0;
+    background: #D4F1FC;
+
+}
+.findcompanieshead p{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.findcompanieshead h2{
+    font-size: 25px;
+   
+}
+.findcomponiestwoparts h2{
+
+}
+.findcomponiestwoparts p{
+    margin-top: 20px;
+    line-height: 2.2;
+    font-size: 18px;
+    font-weight: 400;
+    word-spacing: 2px;
+}
+
+.myboximage img{
+    width: 300px;
+    max-width: 100%;
+}
+
+
+
+
+
+/* Stock Resources  */
+
+.stockresourcecard{
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.stockresourcecard img{
+    border-radius: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.stocksourceshead{
+    background-color: #2EAAA6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+.stocksourceshead h2{
+     color: white;
+     margin-top: 0;
+}
