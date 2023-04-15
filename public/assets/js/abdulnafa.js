@@ -20,4 +20,25 @@ $(this).next(".turnleftcontent").addClass("active");
 
 
 
+
+// ---------------------------------Dashboard ---------------------------------------
+
+
+$(".dashboardtabshead ul li").on("click",function(){
+
+
+$(".dashboardtabshead ul li").each(function(){
+
+$(this).removeClass("active");
+
+});
+
+
+$(this).addClass("active");
+
+
+});
+
+
+
 });

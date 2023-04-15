@@ -10,7 +10,7 @@
     <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet">
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('assets/css/responsive.css') }}" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;display=swap"
@@ -65,7 +65,7 @@
                                         <li class="dropdown"><a href="{{url('/stock')}}">Stock Sources</a>
 
                                         </li>
-                                        <li><a href="projects.html">Dashboard</a>
+                                        <li><a href="{{Route('dashboard')}}">Dashboard</a>
                                         </li>
                                         <li class="dropdown"><a href="#">Profile</a>
 

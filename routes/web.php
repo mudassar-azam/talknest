@@ -108,6 +108,12 @@ Route::get('/signup', function () {
     return view('front.signup');
 });
 
+
+Route::get('/dashboard', function () {
+    return view('front.dashboard');
+})->name("dashboard");
+
+
 Route::get('/frontblog/{id}', function ($id) {
     $posts = category::join('blogs','blogs.category_id','=','categories.id')->where('blogs.category_id','=',$id)->get();
     $post = category::find($id);
