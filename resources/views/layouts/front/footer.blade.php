@@ -129,7 +129,7 @@
         </div>
 
         <div class="footer-bottom">
-            <div class="copyright">2023 &copy; All rights reserved by <a href="#">Themexriver</a>
+            <div class="copyright">2023 &copy; All rights reserved by <a href="#">CanvaSolutions</a>
             </div>
         </div>
 

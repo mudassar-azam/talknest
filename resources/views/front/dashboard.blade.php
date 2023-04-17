@@ -233,13 +233,248 @@
                 </div>
             </div>
             <div class="col-md-3 dashboardright">
-            <h4 class="myupdate">Market Performance</h4>
+                <h4 class="myupdate">Market Performance</h4>
+
+                <div class="row marketperformancerow">
+                    <input type="text" placeholder="company name" />
+                    <button class="btn btn-primary">Search</button>
+                </div>
+
+
+
+                <div class="py-4">
+                    <canvas id="myChart" style="width:100%;max-width:700px">
+                </div>
+
+
+                <div class="tabsection">
+                    <div class="righttopdashboardtabshead">
+                        <ul>
+                            <li class="active">
+                                <a>Indices</a>
+                            </li>
+
+                            <li>
+                                <a>Futures</a>
+                            </li>
+
+
+                            <li>
+                                <a>Bonds</a>
+                            </li>
+
+
+                            <li>
+                                <a>Forex</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="dashboardlists">
+                        <ul>
+                            <li>
+                                <div class="row border-bottom pb-2 ">
+                                    <div class="col-6">
+                                        <h4>SPXUSD *</h4>
+                                        <h6>S&P 500</h6>
+                                    </div>
+                                    <div class="col-6 d-flex flex-column align-items-center">
+                                        <h4>4146.3</h4>
+                                        <h6 class="text-success">S&P 500</h6>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="row border-bottom pb-2 ">
+                                    <div class="col-6">
+                                        <h4>AZXUSD *</h4>
+                                        <h6>L&P 200</h6>
+                                    </div>
+                                    <div class="col-6 d-flex flex-column align-items-center">
+                                        <h4>3136.3</h4>
+                                        <h6 class="text-success">L&P 200</h6>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="row border-bottom pb-2 ">
+                                    <div class="col-6">
+                                        <h4>MJXUSD *</h4>
+                                        <h6>A&L 100</h6>
+                                    </div>
+                                    <div class="col-6 d-flex flex-column align-items-center">
+                                        <h4>2346.3</h4>
+                                        <h6 class="text-success">A&L 100</h6>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="row border-bottom pb-2 ">
+                                    <div class="col-6">
+                                        <h4>RPXUSD *</h4>
+                                        <h6>W&P 900</h6>
+                                    </div>
+                                    <div class="col-6 d-flex flex-column align-items-center">
+                                        <h4>1246.3</h4>
+                                        <h6 class="text-success">W&P 900</h6>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="row border-bottom pb-2 ">
+                                    <div class="col-6">
+                                        <h4>
+                                            OPIUSD *</h4>
+                                        <h6>K&M 600</h6>
+                                    </div>
+                                    <div class="col-6 d-flex flex-column align-items-center">
+                                        <h4>0126.3</h4>
+                                        <h6 class="text-success">K&M 600</h6>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Bottom Right  -->
+
+
+
+                <div class="tabsection">
+                <div class="rightbottomdashboardtabshead">
+                    <ul>
+                        <li class="active">
+                            <a>Indices</a>
+                        </li>
+
+                        <li>
+                            <a>Futures</a>
+                        </li>
+
+
+                        <li>
+                            <a>Bonds</a>
+                        </li>
+
+
+                        <li>
+                            <a>Forex</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="dashboardlists">
+                    <ul>
+                        <li>
+                            <div class="row border-bottom pb-2 ">
+                                <div class="col-6">
+                                    <h4>SPXUSD *</h4>
+                                    <h6>S&P 500</h6>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <h4>4146.3</h4>
+                                    <h6 class="text-success">S&P 500</h6>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="row border-bottom pb-2 ">
+                                <div class="col-6">
+                                    <h4>AZXUSD *</h4>
+                                    <h6>L&P 200</h6>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <h4>3136.3</h4>
+                                    <h6 class="text-success">L&P 200</h6>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                        <li>
+                            <div class="row border-bottom pb-2 ">
+                                <div class="col-6">
+                                    <h4>MJXUSD *</h4>
+                                    <h6>A&L 100</h6>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <h4>2346.3</h4>
+                                    <h6 class="text-success">A&L 100</h6>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                        <li>
+                            <div class="row border-bottom pb-2 ">
+                                <div class="col-6">
+                                    <h4>RPXUSD *</h4>
+                                    <h6>W&P 900</h6>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <h4>1246.3</h4>
+                                    <h6 class="text-success">W&P 900</h6>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                        <li>
+                            <div class="row border-bottom pb-2 ">
+                                <div class="col-6">
+                                    <h4>
+                                        OPIUSD *</h4>
+                                    <h6>K&M 600</h6>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <h4>0126.3</h4>
+                                    <h6 class="text-success">K&M 600</h6>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
             </div>
 
 
 
+
+         
+
+
+
+
         </div>
+
+
     </div>
+</div>
 </div>
 
 

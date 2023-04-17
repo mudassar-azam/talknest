@@ -22,6 +22,9 @@
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
     <link href="{{asset('assets/css/abdulnafa.css')}}" rel="stylesheet">
 </head>
 
@@ -81,13 +84,15 @@
 
                                 <!-- Search Box -->
                                 <div class="search-box-outer">
-                                    <div class="search-box-btn"><span class="flaticon-search"></span></div>
+                                    <div class="search-box-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
                                 </div>
 
                                 <!-- Cart Box -->
-                                <div class="cart-box">
+                                <!-- <div class="cart-box">
                                     <a class="cart fa-solid fa-cart-plus fa-fw" href="contact.html"></a>
-                                </div>
+                                </div> -->
                                 @if(Auth::check())
                                 <div class="cart-box">
                                     <form method="POST" action="{{ route('logout') }}">
@@ -97,7 +102,7 @@
                                 </div>
                                 @else
                                 <div class="cart-box">
-                                    <a href="{{url('/signin')}}">Sign in</a>
+                                    <a class="btn btn-success" href="{{url('/signin')}}">Sign in</a>
                                 </div>
 
                                 <div class="cart-box">

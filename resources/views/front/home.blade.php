@@ -161,7 +161,7 @@
 
 
             </div>
-            <div class="col-md-7 d-flex justify-content-center">
+            <div class="col-md-7 d-flex justify-content-center turntalkrightimgage">
                 <img src="{{asset('assets/images/home/turnitanimated.gif')}}" alt="">
             </div>
         </div>
@@ -224,7 +224,7 @@
 
 <!-- About One -->
 <section class="about-one">
-    <div class="auto-container">
+    <div class=" container-fluid">
         <div class="about-one-inner_container" style="background-image:url(assets/images/background/pattern-1.png)">
             <div class="row clearfix">
 

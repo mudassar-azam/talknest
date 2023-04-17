@@ -74,7 +74,9 @@ p,span,a,li{
     margin-bottom: 25px;
 }
 
-
+.turntalkrightimgage img{
+    width: 550px;
+}
 
 
 /* Find Companies and Moves Suitable for  Your Investment Profile */
@@ -229,4 +231,70 @@ color: #6EC1C7;
 .followstockright button:hover{
     background: #801281;
 
+}
+
+.marketperformancerow{
+    position: relative;
+}
+.marketperformancerow input {
+    border: 1px solid rgba(0, 0, 0, 0.541);
+    border-radius: 15px;
+    padding: 10px 10px;
+
+}
+.marketperformancerow button{
+    position: absolute;
+    width: auto;
+    right: -7px;
+    border-radius: 15px;
+    top: 10%;
+}
+
+
+
+
+/* right top  */
+
+
+.righttopdashboardtabshead ul{
+    display: flex;
+}
+
+.righttopdashboardtabshead ul li{
+    margin-left: 5px;
+    margin-right: 5px;
+   
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+.righttopdashboardtabshead ul li.active{
+    background-color: #801281;
+    color: white;
+   
+}
+
+
+
+
+
+/* Right Bottom  */
+
+
+
+
+.rightbottomdashboardtabshead ul{
+    display: flex;
+}
+
+.rightbottomdashboardtabshead ul li{
+    margin-left: 5px;
+    margin-right: 5px;
+   
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+.rightbottomdashboardtabshead ul li.active{
+    background-color: #801281;
+    color: white;
+   
 }
