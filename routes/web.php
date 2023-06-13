@@ -123,4 +123,3 @@ Route::get('/frontblog/{id}', function ($id) {
 Route::get('blogdetail/{id}',[FrontController::class,'blogdetail'])->name('blogdetail');
 //comment Route
 Route::post('addComment',[FrontController::class,'addComment'])->name('addComment');
-

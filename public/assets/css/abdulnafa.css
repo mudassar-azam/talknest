@@ -94,7 +94,7 @@ p,span,a,li{
 }
 .findcompanieshead h2{
     font-size: 25px;
-   
+
 }
 .findcomponiestwoparts h2{
 
@@ -131,7 +131,7 @@ p,span,a,li{
     background-color: #2EAAA6;
     padding-top: 20px;
     padding-bottom: 20px;
-   
+
 }
 .stocksourceshead h2{
      color: white;
@@ -153,7 +153,7 @@ p,span,a,li{
     border: 1px solid rgba(0, 0, 0, 0.363);
     padding: 5px 6px;
     margin-top: 10px;
-    
+
 }
 
 .blankborderdiv{
@@ -176,14 +176,14 @@ p,span,a,li{
 .dashboardtabshead ul li{
     margin-left: 5px;
     margin-right: 5px;
-   
+
     padding: 4px 8px;
     border-radius: 8px;
 }
 .dashboardtabshead ul li.active{
     background-color: #801281;
     color: white;
-   
+
 }
 
 .dashboardlists{
@@ -263,14 +263,14 @@ color: #6EC1C7;
 .righttopdashboardtabshead ul li{
     margin-left: 5px;
     margin-right: 5px;
-   
+
     padding: 4px 8px;
     border-radius: 8px;
 }
 .righttopdashboardtabshead ul li.active{
     background-color: #801281;
     color: white;
-   
+
 }
 
 
@@ -289,12 +289,48 @@ color: #6EC1C7;
 .rightbottomdashboardtabshead ul li{
     margin-left: 5px;
     margin-right: 5px;
-   
+
     padding: 4px 8px;
     border-radius: 8px;
 }
 .rightbottomdashboardtabshead ul li.active{
     background-color: #801281;
     color: white;
-   
+
+}
+
+/* Comment section style */
+
+
+.login-message {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .login-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .login-link:hover {
+    text-decoration: underline;
+  }
+
+/* else Div */
+
+.else {
+    background-color: #f2f2f2; /* Set the background color */
+    color: #333333; /* Set the text color */
+    padding: 20px; /* Add some padding around the content */
+    border: 1px solid #cccccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    text-align: center; /* Center align the text */
+    font-size: 18px; /* Set the font size */
+    font-family: Arial, sans-serif; /* Set the font family */
 }
