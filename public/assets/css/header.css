@@ -206,6 +206,7 @@
 	position:relative;
 	z-index: 1;
 	padding:20px 0px;
+	width: 4rem;
 }
 
 .main-header .header-lower{
@@ -1484,7 +1485,8 @@
 
 .main-header .outer-box{
 	position: relative;
-	margin-left:var(--margin-left-25);
+	margin-left:auto;
+
 }
 
 .main-header .outer-box .button-box{

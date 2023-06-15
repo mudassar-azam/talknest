@@ -144,6 +144,9 @@ p,span,a,li{
 
 /* -------------------------------------Front Dashboard--------------------------------------- */
 
+.tradingview-widget-container{
+    width: 100%!important;
+}
 
 .myportfolio,.myfavourite,.marketoverview{
     font-size: 16px;
@@ -239,17 +242,209 @@ color: #6EC1C7;
 .marketperformancerow input {
     border: 1px solid rgba(0, 0, 0, 0.541);
     border-radius: 15px;
-    padding: 10px 10px;
+    padding: 12px 10px;
 
 }
 .marketperformancerow button{
     position: absolute;
     width: auto;
-    right: -7px;
+    right: 7px;
     border-radius: 15px;
     top: 10%;
 }
 
+/* -------------------------------------Front Profile--------------------------------------- */
+
+.row {
+    width: 100%!important;
+}
+.profile{
+    height: 100vh;
+}
+
+.profile-cover{
+    width: 100%;
+    height: 15rem;
+    background-color: #607387;
+    position: relative;
+}
+
+.profile-picture {
+    width: 10rem;
+    height: 10rem;
+    background-image: url("../images/gallery/instagram-1.jpg");
+    background-size: cover;
+    border-radius: 100%;
+    left: 2.5rem;
+    bottom: -6rem;
+    position: absolute;
+    border: 0.2em solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.profile-picture::after{
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: lime;
+    border-radius: 100%;
+    left: 8rem;
+    top: 1rem;
+    position: absolute;
+    border: 0.1em solid white;
+}
+
+.profile-picture:hover {
+    opacity:0.9;
+    transition: opacity 0.3s ease-out;
+}
+
+.profile-picture .camera-icon{
+    border-radius: 100%!important;
+    opacity: 0;
+}
+
+.profile-picture:hover .camera-icon{
+    opacity: 1;
+}
+
+  .camera-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0;
+    }
+ 
+  .profile-cover:hover .camera-button{
+    opacity: 1;
+    }
+
+
+
+  .camera-button:hover .message-box {
+    transform: translateX(30%); /* Move the message box to the right */
+    opacity: 1;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+   }
+  
+  .camera-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    background-size: cover;
+    border-radius: 30%;
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .camera-icon:hover{
+        color: #24AFA2;
+    }
+  
+  
+  .message-box {
+    position: absolute;
+    top: 0.6rem;
+    left: 1rem; /* Initial position - hidden on the right side */
+    width: 120px;
+    height: 25px;
+    background-color: #152E48;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    line-height: 25px;
+    text-align: center;
+    padding-left: 0.2rem;
+    opacity: 0;
+    }
+
+    .message-box::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -0.22rem;
+        transform: translateY(-50%) rotate(45deg);
+        width: 8px;
+        height: 8px;
+        background-color: #152E48;
+    }  
+
+
+
+    .profile-header-content{
+        height: 9.5rem;
+        display: flex;
+    }
+
+    .profile-header-content .left{
+        width: 14rem;
+        min-height: 6rem; ;
+        content: "";
+    }
+
+    .profile-header-content .right{
+        flex: 1;
+        padding: 2rem;
+
+    }
+
+    .profile-header-content .right h3{
+        font-size: 1.5rem;
+    } 
+
+    .profile-header-content .right p{
+        font-size: 1rem;
+    } 
+
+
+    .profile-content-body {
+        display: flex;
+    }
+
+    .profile-content-body .left{
+        flex: 3;
+    }
+    
+    .profile-content-body .left ul{
+        list-style: none;
+    }
+    .profile-content-body .left ul li{
+        padding: 10px 15px;
+    }
+    .profile-content-body .left ul li:hover{
+        color:#24AFA2;
+    }
+
+    .profile-content-body .right{
+        flex: 6;
+    }
+
+    .profile-content-body .right .top-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-content-body .right .top-content button{
+        border-radius: 30rem;
+        padding: 10px 25px;
+        background-color: lightgrey;
+    }
+
+    .profile-content-body .right .top-content button:hover{
+        background-color:#3B60FF;
+        color: #fff;
+    
+    }
+
+    .profile-content-body .right table td{
+        padding: 10px 25px 10px 0;    
+    }
 
 
 

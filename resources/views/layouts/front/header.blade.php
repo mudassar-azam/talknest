@@ -43,6 +43,11 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                     <div class="inner-container">
 
                         <div class="nav-outer d-flex justify-content-between align-items-center flex-wrap">
+
+                            <!-- Mobile Navigation Toggler -->
+                            <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
+
+                        
                             <!-- Logo -->
                             <div class="logo">
                                 <a href="{{url('/')}}" title=""><img src="{{asset('assets/images/logo.png')}}" alt=""
@@ -71,7 +76,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                                         </li>
                                         <li><a href="{{Route('dashboard')}}">Dashboard</a>
                                         </li>
-                                        <li class="dropdown"><a href="#">Profile</a>
+                                        <li class="dropdown"><a href="{{url('profile')}}">Profile</a>
 
                                         </li>
                                         <li><a href="{{url('about')}}">About Us</a></li>
@@ -123,9 +128,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
                             </div>
 
-                            <!-- Mobile Navigation Toggler -->
-                            <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
-
+                            
                         </div>
 
                     </div>

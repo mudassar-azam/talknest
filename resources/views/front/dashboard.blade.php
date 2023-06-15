@@ -14,7 +14,7 @@
 
                     <h4 class="marketoverview">Market Overview</h4>
                     <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container" >
                         <div class="tradingview-widget-container__widget"></div>
                         <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
                                 rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
@@ -30,7 +30,7 @@
                                 "isTransparent": false,
                                 "showSymbolLogo": true,
                                 "showFloatingTooltip": false,
-                                "width": "300",
+                                "width": "100%",
                                 "height": "660",
                                 "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
                                 "plotLineColorFalling": "rgba(41, 98, 255, 1)",
@@ -313,7 +313,7 @@
                                     "isTransparent": false,
                                     "showSymbolLogo": true,
                                     "showFloatingTooltip": false,
-                                    "width": "300",
+                                    "width": "100%",
                                     "height": "660",
                                     "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
                                     "plotLineColorFalling": "rgba(41, 98, 255, 1)",
@@ -473,7 +473,7 @@
                                     "isTransparent": false,
                                     "showSymbolLogo": true,
                                     "showFloatingTooltip": false,
-                                    "width": "300",
+                                    "width": "100%",
                                     "height": "660",
                                     "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
                                     "plotLineColorFalling": "rgba(41, 98, 255, 1)",

@@ -100,6 +100,11 @@ Route::get('/about', function () {
     return view('front.aboutus');
 });
 
+Route::get('/profile', function () {
+    return view('front.profile');
+});
+
+
 Route::get('/signin', function () {
     return view('front.signin');
 });
