@@ -36,7 +36,7 @@
 						
 						<div class="top-content">
 							<h6>Details</h6>  
-							<button>Edit</button>
+							<a href="{{url('editProfile')}}"><button>Edit</button></a>
 						</div> 
 						<table>
 							<tr><td>First Name</td><td>Muhammad</td></tr>

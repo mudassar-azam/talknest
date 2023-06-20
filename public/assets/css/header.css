@@ -374,8 +374,13 @@
 	background-color: var(--main-color);
 }
 
-.main-header .main-menu .navigation > li.dropdown a {
-    padding-right: 15px !important;
+/* .main-header .main-menu .navigation > li.dropdown a { */
+    /* padding-left: 15px !important; */
+/* } */ 
+
+.main-header .main-menu .navigation {
+
+    padding-left: 25px !important;
 }
 
 .main-header .main-menu .navigation > li.current > a:before,

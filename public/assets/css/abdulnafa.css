@@ -267,6 +267,8 @@ color: #6EC1C7;
     height: 15rem;
     background-color: #607387;
     position: relative;
+    background-image: url("../images/background/2.jpg");
+    object-fit: cover;
 }
 
 .profile-picture {
@@ -434,6 +436,11 @@ color: #6EC1C7;
         border-radius: 30rem;
         padding: 10px 25px;
         background-color: lightgrey;
+        transition: background-color 0.5s ease;
+    }
+
+    .profile-content-body .right .top-content a{
+        text-decoration: none;
     }
 
     .profile-content-body .right .top-content button:hover{
@@ -443,12 +450,73 @@ color: #6EC1C7;
     }
 
     .profile-content-body .right table td{
-        padding: 10px 25px 10px 0;    
+        padding: 10px 40px 10px 0;    
     }
 
 
+/* -------------------------------------Front Edit Profile--------------------------------------- */
 
-/* right top  */
+.edit-profile-header-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+.edit-profile-header-content  button, .edit-profile-body  button{
+    border-radius: 30rem;
+    padding: 10px 25px;
+    background-color: lightgrey;
+    transition: background-color 0.5s ease;
+}
+
+.edit-profile-header-content a, .edit-profile-body a{
+    text-decoration: none;
+}
+
+.edit-profile-header-content button:hover, .edit-profile-body button:hover{
+    background-color:#3B60FF;
+    color: #fff;
+}
+
+.edit-profile-body{
+    display: flex;
+    padding: 2rem 5rem;
+}
+
+.edit-profile-body .left{
+    flex: 3;
+}
+
+.edit-profile-body .left ul{
+    list-style: none;
+}
+.edit-profile-body .left ul li{
+    padding: 10px 15px;
+}
+.edit-profile-body .left ul li:hover{
+    color:#24AFA2;
+}
+
+.edit-profile-body .right{
+    flex: 6;
+}
+
+.edit-profile-body .right .top-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-profile-body .right table td{
+    padding: 10px 40px 10px 0;    
+}
+
+
+
+
+
+
+
+    /* right top  */
 
 
 .righttopdashboardtabshead ul{

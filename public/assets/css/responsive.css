@@ -706,8 +706,31 @@
 		font-size: var(--font-30);
 	}
 
+	.edit-profile-header-content {
+		padding: 1rem 2rem!important;
+	}
+	
+	.edit-profile-body {
+		flex-direction: column;
+		padding: 2rem 3rem!important;
+		gap: 15px;
+	}
+
+	.edit-profile-body .left ul{
+		display: flex;
+	}
+
+	.edit-profile-body .left ul li{
+		white-space: nowrap;
+		padding: 10px 10px!important;
+	}
+
 	.profile-header-content .right p{
 		font-size: 0.78rem!important;
+	}
+
+	.profile-content-body {
+		margin-top: 10rem!important;
 	}
 	
 	.slider-one_heading{

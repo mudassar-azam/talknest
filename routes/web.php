@@ -104,6 +104,10 @@ Route::get('/profile', function () {
     return view('front.profile');
 });
 
+Route::get('/editProfile', function () {
+    return view('front.editProfile');
+});
+
 
 Route::get('/signin', function () {
     return view('front.signin');

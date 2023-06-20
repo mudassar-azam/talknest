@@ -189,6 +189,24 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                     <div class="menu-outer">
                         <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                     </div>
+                    <div class="outer-box d-flex align-items-center">
+
+                                @if(Auth::check())
+                                <div class="cart-box">
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                    <button type="submit" class="btn btn-primary">Logout</button>
+                                    </form>
+                                </div>
+                                @else
+                                <div class="cart-box">
+                                    <a class="btn btn-success" href="{{url('/signin')}}">Sign in</a>
+                                </div>
+
+                                <div class="cart-box">
+                                    <a class="btn btn-primary" href="{{url('/signup')}}">Sign up</a>
+                                </div>
+                                @endif
                 </nav>
             </div>
             <!-- End Mobile Menu -->
