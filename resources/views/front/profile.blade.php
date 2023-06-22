@@ -1,12 +1,15 @@
 @extends('layouts.front.main')
 @section('content')
+@auth
 <div class="container-fluid profile">
         <div class="container">
             <div class="row">
-				<div class="profile-cover">
-					<div class="camera-button">
-						<div class="camera-icon"><i class="fa-solid fa-camera"></i></div>
-						<div class="message-box">Change Cover Photo</div>
+				<div class="avatar-container">
+					<div class="profile-cover">
+						<div class="camera-button">
+							<div class="camera-icon"><i class="fa-solid fa-camera"></i></div>
+							<div class="message-box">Change Cover Photo</div>
+						</div>
 					</div>
 					<div class="profile-picture">
 						<div class="camera-icon">
@@ -49,4 +52,9 @@
 			</div>
 		</div>
 </div>
+@else
+    <div class="else">
+        You Must Login First
+    </div>
+@endauth
 @endsection

@@ -700,6 +700,18 @@
 }
 
 @media only screen and (max-width: 599px){
+
+	.turntalk h1 {
+		font-size: 20px!important;
+		font-weight: 500!important;
+		line-height: 30px;
+	}
+
+	.turnleftcontent {
+		line-height: 1.5!important;
+		font-size: 15px!important;
+		margin: 20px 0;
+	}
 	
 	h2{
 		line-height: 40px;
@@ -919,6 +931,20 @@
 		line-height:34px;
 		font-size:var(--font-24);
 	}
+
+
+	.homecards , .clearfix {
+		margin: 0 auto;
+	}
+
+	.myboximage {
+		margin-bottom: 2rem;
+	}	
+
+	.myboximage img{
+		margin: 0 auto;
+	}
+	
 	
 }
 

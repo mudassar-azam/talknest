@@ -9,10 +9,16 @@
         $sections = DB::table('onesections')->get();
         @endphp
         @foreach ($sections as $section)
+        
         <div class="slide">
 
             <div class="slider-one_pattern-layer" style="background-image:url({{asset('image')}}/{{$section->image}})">
             </div>
+            <!-- <video autoplay muted loop id="myVideo" class="slider-one_pattern-layer">
+                <source src="{{ asset('assets/images/Finance.mp4') }}" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video> -->  
+            <!-- <div class="slider-one_pattern-layer1"></div>           -->
             <div class="auto-container slidercolumn">
 
                 <!-- Content Column -->
@@ -200,7 +206,7 @@
 
 
     <div class="row py-5 findcomponiestwoparts">
-        <div class="col-md-6 d-flex flex-column justify-content-center myboximage">
+        <div class="col-md-6 d-flex flex-column justify-content-center myboximage" >
         <img src="{{asset('assets/images/home/greenborderi.png')}}"  alt="">
           
            
