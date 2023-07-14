@@ -34,7 +34,7 @@
 							<li>Email Invites</li>
 						</ul>
 
-					</div>
+					</div>	
 					<div class="right">
 						
 						<div class="top-content">
@@ -53,8 +53,8 @@
 		</div>
 </div>
 @else
-    <div class="else">
-        You Must Login First
-    </div>
+<div class="else">
+	You Must Login First
+</div>
 @endauth
 @endsection
