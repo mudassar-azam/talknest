@@ -32,8 +32,9 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="name">Detail</label>
-                                            <input type="text" class="form-control" id="detail" name="detail" required>
+                                            <textarea class="form-control" id="detail" name="detail" required></textarea>
                                         </div>
+
                                         <div class="form-group">
                                             <label for="name">Content Images</label>
                                             <input type="file" class="form-control" name="images[]" multiple>

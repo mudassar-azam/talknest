@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\FrontController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -100,9 +101,7 @@ Route::get('/about', function () {
     return view('front.aboutus');
 });
 
-Route::get('/profile', function () {
-    return view('front.profile');
-});
+Route::get('/profile', [FrontController::class, 'profile'])->name('profile');
 
 Route::get('/editProfile', function () {
     return view('front.editProfile');
@@ -132,3 +131,9 @@ Route::get('/frontblog/{id}', function ($id) {
 Route::get('blogdetail/{id}',[FrontController::class,'blogdetail'])->name('blogdetail');
 //comment Route
 Route::post('addComment',[FrontController::class,'addComment'])->name('addComment');
+//Edit user Routes
+
+Route::post('/update', [RegisteredUserController::class,'update'])->name('update');
+Route::post('/upload', [RegisteredUserController::class, 'upload']);
+Route::get('/showimage', [FrontController::class, 'showimage']);
+

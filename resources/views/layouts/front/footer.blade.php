@@ -155,8 +155,8 @@
 <!-- End PageWrapper -->
 
 <!-- Scroll To Top -->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span
-    class="fas fa-long-arrow-up fa-fw"></span></div>
+{{-- <div class="scroll-to-top scroll-to-target" data-target="html"><span
+    class="fas fa-long-arrow-up fa-fw"></span></div> --}}
 
 <script src="{{asset('assets/js/jquery.js')}}"></script>
 <script src="{{asset('assets/js/appear.js')}}"></script>

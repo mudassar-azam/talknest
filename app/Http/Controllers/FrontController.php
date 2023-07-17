@@ -12,7 +12,8 @@ class FrontController extends Controller
    public function blogdetail($id)
    {
     $detail = blog::findOrFail($id);
-    return view('front.blogdetail', compact('detail'));
+    $count = Comment::where('blog_id', $id)->count();
+    return view('front.blogdetail', compact('detail', 'count'));
    }
 
    public function addComment(Request $request)
@@ -35,7 +36,13 @@ class FrontController extends Controller
        return response()->json(['success' => true]);
    }
 
+   public function profile()
+   {
+       $filename = Auth()->user()->image;
+       $filePath = 'storage/profileimage/' . $filename;
 
+       return view('front.profile', ['filePath' => $filePath]);
+   }
 
 
 }

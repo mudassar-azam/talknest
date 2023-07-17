@@ -18,7 +18,7 @@
                             <div class="lower-content">
                                 <ul class="post-meta">
                                     <li>{{ $detail->posted_by }}</li>
-                                    <li>0 Comments</li>
+                                    <li>{{$count}} Comments</li>
                                 </ul>
 
                                 <h4>{{ $detail->heading }}</h4>

@@ -219,11 +219,9 @@
                             data-toggle="dropdown">
                             <img class="nav-profile-img mr-2" alt=""
                                 src="adminassets/images/faces/face1.jpg" />
-                            <span class="profile-name">Henry Klein</span>
+                            <span class="profile-name">{{auth()->user()->name}}</span>
                         </a>
                         <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">
-                            <a class="dropdown-item" href="#">
-                                <i class="mdi mdi-cached mr-2 text-success"></i> Activity Log </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
