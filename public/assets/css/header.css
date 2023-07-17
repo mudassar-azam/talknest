@@ -1716,6 +1716,7 @@
 	position:relative;
 	margin:var(--margin-zero);
 	overflow: hidden;
+	margin-top: 1.5rem;
 }
 
 .search-popup .form-group input[type="text"],
