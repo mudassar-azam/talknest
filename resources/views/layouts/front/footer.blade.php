@@ -13,8 +13,10 @@
                         <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                             <div class="footer-widget logo-widget">
                                 <div class="logo">
-                                    <a href="index.html"><img src="{{asset('assets/images/footer-logo.png')}}"
-                                            alt="" /></a>
+                                    <a href="index.html">
+                                        <!-- <img src="{{asset('assets/images/footer-logo.png')}}" alt="" /> -->
+                                        <h4 style="color:#93B74B;">TalkNest</h4>
+                                    </a>
                                 </div>
                                 <div class="text">We work with a passion of taking challenges and creating
                                     new ones in advertising sector.</div>

@@ -1537,7 +1537,7 @@
 
 .project-one{
 	position:relative;
-	padding:100px 0px 0px;
+	/* padding:100px 0px 0px; */
     background-color: var(--color-seven);
 }
 
@@ -1736,6 +1736,12 @@
     -ms-transform: scaleX(1);
     -o-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+.project-one-scroll{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
 }
 
 /***

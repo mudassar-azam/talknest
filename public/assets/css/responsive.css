@@ -724,8 +724,12 @@
 	
 	.edit-profile-body {
 		flex-direction: column;
-		padding: 2rem 3rem!important;
+		padding: 0 1rem!important;
 		gap: 15px;
+	}
+
+	.edit-profile-body .right{
+		padding: 3rem 1rem!important;
 	}
 
 	.edit-profile-body .left ul{
@@ -929,7 +933,7 @@
 	
 	h3{
 		line-height:34px;
-		font-size:var(--font-24);
+		font-size:var(--font-16);
 	}
 
 

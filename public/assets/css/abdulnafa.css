@@ -98,7 +98,7 @@ li {
 
 
 .findcompanies {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     background: #D4F1FC;
 
 }
@@ -113,7 +113,6 @@ li {
 
 }
 
-.findcomponiestwoparts h2 {}
 
 .findcomponiestwoparts p {
     margin-top: 20px;
@@ -123,9 +122,64 @@ li {
     word-spacing: 2px;
 }
 
+.findcompaniesThirdPart{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.findcompaniesThirdPart h2{
+    margin: 20px auto;
+    width: 70%;
+}
+.findcompaniesThirdPart p{
+    width: 70%;
+    margin: 0 auto;
+}
+.findcompaniesForthPart{
+    min-height: 25rem;
+    background-color: #61B2AF;
+    color: white;
+    margin-top: -3rem;
+    text-align: center;
+}
+
+.findcompaniesForthPart .container h2{
+    margin: 20px auto;
+    width: 70%;
+    
+}
+
+.findcompaniesForthPart p{
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+.findcompaniesSVG{
+    width: 100%;
+    z-index: -1;
+}
+
+.findcompaniesThirdPart p:nth-child(3){
+    margin-top: 20px;
+}
+
 .myboximage {
     -webkit-animation: bounce-bottom 2s both infinite;
     animation: bounce-bottom 2s both infinite;
+}
+.bottom-heading{
+    background-color: #D4F1FC;    
+}
+
+.bottom-heading div h1{
+    font-size: 2.7rem;
+    line-height: 3.2rem;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #D4F1FC;
+    box-sizing: content-box;
+
 }
 
 @-webkit-keyframes bounce-bottom {
