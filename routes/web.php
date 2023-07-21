@@ -48,13 +48,15 @@ Route::middleware(['auth'])->group(function () {
         return view('admin.category', compact('posts'));
     });
 
-    Route::get('/blog', function(){
-        if (Auth::user()->role_as !== 'admin') {
-            abort(403, 'Unauthorized action.');
-        }
+    // Route::get('/blog', function(){
+    //     if (Auth::user()->role_as !== 'admin') {
+    //         abort(403, 'Unauthorized action.');
+    //     }
 
-        return view('admin.blogs');
-    });
+    //     return view('admin.blogs');
+    // });
+
+    Route::get('/blog', [AdminController::class , 'blogview']);
 
     //add routes
 
@@ -67,6 +69,9 @@ Route::middleware(['auth'])->group(function () {
     //blog routes
     Route::post('/addblog',[AdminController::class, 'blog']);
     Route::delete('/blog/{id}',[AdminController::class, 'deleteblog'])->name('blog.deleteblog');
+    Route::match(['get', 'post'], '/blog/{id}/edit', [AdminController::class, 'editblog'])->name('blog.edit');
+
+
 
 });
 

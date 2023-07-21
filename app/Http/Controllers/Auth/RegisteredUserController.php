@@ -51,21 +51,26 @@ class RegisteredUserController extends Controller
     }
 
     public function update(Request $request): RedirectResponse
-{
+    {
+        $request->validate([
+            'name' => ['nullable', 'string', 'max:255'],
+            'password' => ['nullable', 'confirmed', Rules\Password::defaults()],
+        ]);
 
-    $request->validate([
-        'name' => ['required', 'string', 'max:255'],
-        'password' => ['nullable', 'confirmed', Rules\Password::defaults()],
-    ]);
+        $user = Auth::user();
 
+        if ($request->filled('name')) {
+            $user->name = $request->name;
+        }
 
-    $user = Auth::user();
-    $user->name = $request->name;
-    $user->password = Hash::make($request->password);
-    $user->save();
+        if ($request->filled('password')) {
+            $user->password = Hash::make($request->password);
+        }
 
-    return redirect('/profile')->with('success', 'User updated successfully');
-}
+        $user->save();
+
+        return redirect('/profile')->with('success', 'User updated successfully');
+    }
 
 public function upload(Request $request)
 {

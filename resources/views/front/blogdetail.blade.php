@@ -22,7 +22,7 @@
                                 </ul>
 
                                 <h4>{{ $detail->heading }}</h4>
-                                <p>{{ $detail->detail }}</p>
+                                <p>{!! $detail->detail !!}</p>
                                 <div class="gallery-outer">
                                     <div class="row clearfix">
                                         <div class="col-lg-6 col-md-6 col-sm-12">

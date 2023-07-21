@@ -47,7 +47,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                             <!-- Mobile Navigation Toggler -->
                             <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
 
-                        
+
                             <!-- Logo -->
                             <div class="logo">
                                 <a href="{{url('/')}}" title=""><img src="{{asset('assets/images/logo.png')}}" alt=""
@@ -72,12 +72,12 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
                                         </li>
                                         <li class="dropdown"><a href="{{url('/stock')}}">Stock Sources</a>
-
                                         </li>
                                         <li><a href="{{Route('dashboard')}}">Dashboard</a>
                                         </li>
+                                        @auth
                                         <li class="dropdown"><a href="{{url('profile')}}">Profile</a>
-
+                                        @endauth
                                         </li>
                                         <li><a href="{{url('about')}}">About Us</a></li>
                                     </ul>
@@ -128,7 +128,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
                             </div>
 
-                            
+
                         </div>
 
                     </div>

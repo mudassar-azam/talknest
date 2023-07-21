@@ -20,10 +20,14 @@
                         <div class="image">
                             <a href="{{route ('blogdetail', ['id' => $post->id])}}"><img src="{{asset('blogimage')}}/{{$post->feature_image}}" alt="" /></a>
                         </div>
+                        @php
+                            $id = $post->id;
+                            $count = DB::table('comments')->where('blog_id', $id)->count();
+                        @endphp
                         <div class="lower-content">
                             <ul class="post-meta">
                                 <li>{{$post->posted_by}}</li>
-                                <li>0 Comments</li>
+                                <li>{{$count}} Comments</li>
                             </ul>
                             <div class="content">
                                 <h4><a href="{{route ('blogdetail', ['id' => $post->id])}}">{{ strlen($post->heading) > 25 ? substr($post->heading, 0, 25) . '...' : $post->heading }}</a></h4>

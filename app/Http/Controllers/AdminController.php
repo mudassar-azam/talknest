@@ -7,6 +7,7 @@ use App\Models\category;
 use App\Models\onesection;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
@@ -148,12 +149,69 @@ public function blog(Request $request)
         $blog->images .= $contentImageName . ',';
     }
     $blog->images = rtrim($blog->images, ',');
-
     $blog->save();
 
     return redirect('/blog')->with('success', 'Post added successfully.');
 
 }
+
+public function blogview()
+{
+    if (Auth::user()->role_as !== 'admin') {
+        abort(403, 'Unauthorized action.');
+    }
+
+    return view('admin.blogs');
+}
+
+public function editblog(Request $request, $id)
+{
+
+    // Validate the form data
+    $validatedData = $request->validate([
+        'heading' => 'required|string|max:255',
+        'feature_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'detail' => 'required|string',
+        'images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'posted_by' => 'required|string|max:255',
+    ]);
+
+    // Find the existing blog post
+    $blog = Blog::findOrFail($id);
+
+    // Update the blog post fields
+    $blog->heading = $request->heading;
+    $blog->detail = $request->detail;
+    $blog->posted_by = $request->posted_by;
+    $blog->category_id = $request->input('category');
+
+    // Update the feature image if provided
+    if ($request->hasFile('feature_image')) {
+        $featureImage = $request->file('feature_image');
+        $featureImageName = time() . '_' . $featureImage->getClientOriginalName();
+        $featureImage->move(public_path('blogimage'), $featureImageName);
+        $blog->feature_image = $featureImageName;
+    }
+
+    // Update the content images if provided
+    if ($request->hasFile('images')) {
+        $contentImages = $request->file('images');
+        $updatedImages = [];
+
+        foreach ($contentImages as $contentImage) {
+            $contentImageName = time() . '_' . $contentImage->getClientOriginalName();
+            $contentImage->move(public_path('blogimage'), $contentImageName);
+            $updatedImages[] = $contentImageName;
+        }
+
+        $blog->images = implode(',', $updatedImages);
+    }
+
+    $blog->save();
+
+    return redirect('/blog')->with('success', 'Post updated successfully.');
+}
+
 public function deleteblog($id)
 {
     $post = blog::findOrFail($id);
