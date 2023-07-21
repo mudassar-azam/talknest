@@ -3,8 +3,8 @@
 @section('content')
 @auth
     <div class="container-fluid">
-        <div class="container">
-            <div class="row">
+        <div class="" style="width:94%; margin:0 auto;" >
+            <div class="row" style="margin:0 auto;">
 
 
                 <div class="col-md-3 dashboardleft">

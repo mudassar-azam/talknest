@@ -216,6 +216,25 @@
         </div>
     </div>
     </div>
+
+       <div class="row findcompaniesThirdPart">
+        <div class="container">
+            <h2>Manage your portfolio and nimbly tweak your <br /> strategy for optimal performance.</h2>	
+            <p>Track gains, losses, and currency fluctuations across your entire portfolio.</p>
+            <p>Quickly and intelligently grasp a high-level view of your overall performance, risk exposure, and allocation weighting. Drill down for details and make adjustments as you see fit.</p>	
+        </div>
+    </div>
+
+    <svg class="findcompaniesSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#61B2AF" fill-opacity="1" d="M0,128L288,192L576,96L864,96L1152,0L1440,32L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
+        
+    <div class="findcompaniesForthPart">
+        <div class="container">
+            <h2>Stay on top of key moves in your companies including price-moving news, company events, and announcements.</h2>	
+            <p>The TalkNest Dashboard provides a real-time look at relevant updates and news about the companies you hold.</p>	
+        </div>  
+    </div>
+
+
     
 </div>
 
@@ -229,7 +248,7 @@
 
 
 <!-- About One -->
-<section class="about-one">
+<section class="about-one" style="display:none;">
     <div class=" container-fluid">
         <div class="about-one-inner_container" style="background-image:url(assets/images/background/pattern-1.png)">
             <div class="row clearfix">
@@ -304,7 +323,7 @@
 <!-- End About One -->
 
 <!-- Process One -->
-<section class="process-one">
+<section class="process-one" style="display:none;">
     <div class="auto-container">
         <div class="process-one_inner-conatiner">
             <div class="four-item-carousel owl-carousel owl-theme">
@@ -420,7 +439,7 @@
 <!-- End Process One -->
 
 <!-- Services One -->
-<section class="services-one" style="background-image:url(assets/images/background/pattern-2.png)">
+<section class="services-one" style="background-image:url(assets/images/background/pattern-2.png);display:none;">
     <div class="auto-container">
         <!-- Sec Title -->
         <div class="sec-title centered">
@@ -641,7 +660,7 @@
 <!-- End Services One -->
 
 <!-- Progress One -->
-<section class="progress-one" style="background-image:url(assets/images/background/pattern-3.png)">
+<section class="progress-one" style="background-image:url(assets/images/background/pattern-3.png);display:none;">
     <div class="auto-container">
         <div class="row clearfix">
 
@@ -758,7 +777,7 @@
         @endphp
         <div class="row clearfix">
             <div class="container py-5">
-                <div class="row pb-5 mb-4 justify-content-center">
+                <div class="row pb-5 mb-4 justify-content-center project-one-scroll" >
                     @foreach ($posts as $post)
                     <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 py-3">
                         <div class="card shadow-sm border-0 rounded">
@@ -778,4 +797,12 @@
 </section>
 <!-- End Project One -->
 
+<section class="bottom-heading">
+    <div class="container">
+        <h1 class="">Rapidly-growing group of active, well-informed individual investors loving our platform!</h1>
+    </div>
+</section>
+
 @endsection
+
+

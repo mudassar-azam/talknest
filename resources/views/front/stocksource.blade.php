@@ -26,7 +26,7 @@
                       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 py-3">
                         <div class="card stockresourcecard">
                             <a href="{{ route('frontblog', ['id' => $post->id]) }}" style="color: black;">
-                            <div class="card-body p-0">
+                            <div class="card-body p-4">
                               <img src="{{ asset('catimage') }}/{{ $post->image }}" alt="" class="w-100 card-img-top">
                               <div class="p-4">
                                 <h5 class="mb-0">{{ $post->name }}</h5>
