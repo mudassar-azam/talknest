@@ -170,8 +170,14 @@
                                     <h6>Tesla</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showTeslaDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
                                 </div>
+                                <div id="dd-tesla" class="row my-3 py-3" style="display: none;color: white!important;">
+                                    <div class="col-12" style="color: white!important;">
+                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ipsum libero. Nullam blandit magna vitae vehicula tempus. Aenean hendrerit metus at libero lacinia, vel blandit dolor auctor. Nullam tristique tortor vel dui placerat, eget iaculis libero fringilla.</p>
+                                    </div>
+                                </div>
+                               
                             </div>
                             <div class="row my-3 border-top border-bottom py-3">
                                 <div class="col-8 followstockleft">
@@ -179,7 +185,12 @@
                                     <h6>Microsoft</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showMicrosoftDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                </div>
+                                <div id="dd-microsoft" class="row my-3 py-3" style="display: none;color: white!important;">
+                                    <div class="col-12" style="color: white!important;">
+                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ipsum libero. Nullam blandit magna vitae vehicula tempus. Aenean hendrerit metus at libero lacinia, vel blandit dolor auctor. Nullam tristique tortor vel dui placerat, eget iaculis libero fringilla.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row my-3 border-top border-bottom py-3">
@@ -188,7 +199,12 @@
                                     <h6>Berkshire Hathaway</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showHathawayDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                </div>
+                                <div id="dd-hathaway" class="row my-3 py-3" style="display: none;color: white!important;">
+                                    <div class="col-12" style="color: white!important;">
+                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ipsum libero. Nullam blandit magna vitae vehicula tempus. Aenean hendrerit metus at libero lacinia, vel blandit dolor auctor. Nullam tristique tortor vel dui placerat, eget iaculis libero fringilla.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row my-3 border-top border-bottom py-3">
@@ -197,7 +213,12 @@
                                     <h6>Vanguard Index Funds - Vanguard Total Stock Market ETF</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showVanguardDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                </div>
+                                <div id="dd-vanguard" class="row my-3 py-3" style="display: none;color: white!important;">
+                                    <div class="col-12" style="color: white!important;">
+                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ipsum libero. Nullam blandit magna vitae vehicula tempus. Aenean hendrerit metus at libero lacinia, vel blandit dolor auctor. Nullam tristique tortor vel dui placerat, eget iaculis libero fringilla.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row my-3 border-top border-bottom py-3">
@@ -206,7 +227,12 @@
                                     <h6>Alphabet</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showGoogleDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                </div>
+                                <div id="dd-google" class="row my-3 py-3" style="display: none;color: white!important;">
+                                    <div class="col-12" style="color: white!important;">
+                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row my-3 border-top border-bottom py-3">
@@ -215,7 +241,12 @@
                                     <h6>Apple</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showAppleDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                </div>
+                                <div id="dd-apple" class="row my-3 py-3" style="display: none;color: white!important;">
+                                    <div class="col-12" style="color: white!important;">
+                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row my-3 border-top border-bottom py-3">
@@ -224,7 +255,12 @@
                                     <h6>Amazon.com</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showAmazonDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                </div>
+                                <div id="dd-amazon" class="row my-3 py-3" style="display: none;color: white!important;">
+                                    <div class="col-12" style="color: white!important;">
+                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row my-3 border-top border-bottom py-3">
@@ -233,11 +269,63 @@
                                     <h6>Vanguard Index Funds - Vanguard S&P 500 ETF</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showVOODescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
                                 </div>
+                                <div id="dd-voo" class="row my-3 py-3" style="display: none;color: white!important;">
+                                    <div class="col-12" style="color: white!important;">
+                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
+                    <script>
+                        function showLorem(sectionId) {
+                            var loremSection = document.getElementById(sectionId);
+                            if (loremSection.style.display === "block") {
+                                loremSection.style.display = "none";
+                            } else {
+                                loremSection.style.display = "block";
+                            }
+                        }
+                        
+                        function showTeslaDescription() {
+                            showLorem("dd-tesla");
+                        }
+                        
+                        function showMicrosoftDescription() {
+                            showLorem("dd-microsoft");
+                        }
+                        
+                        function showHathawayDescription() {
+                            showLorem("dd-hathaway");
+                        }
+                        
+                        function showVanguardDescription() {
+                            showLorem("dd-vanguard");
+                        }
+
+                        function showGoogleDescription() {
+                            showLorem("dd-google");
+                        }
+                        
+                        function showAppleDescription() {
+                            showLorem("dd-apple");
+                        }
+                        
+                        function showAmazonDescription() {
+                            showLorem("dd-amazon");
+                        }
+                        dd-vanguard
+                        function showVOODescription() {
+                            showLorem("dd-voo");
+                        }
+                        
+                        
+                        
+                        
+                    </script>
                     <div class="col-md-3 dashboardright">
                         <h4 class="myupdate">Market Performance</h4>
                         <div class="row marketperformancerow">
