@@ -12,13 +12,13 @@
                         <!-- TradingView Widget BEGIN -->
                         <div class="tradingview-widget-container">
                             <div class="tradingview-widget-container__widget"></div>
-                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            {{-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
                                     rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
-                                        TradingView</span></a></div>
+                                        TradingView</span></a></div> --}}
                             <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
                                 async>
                                 {
-                                    "colorTheme": "light",
+                                    "colorTheme": "dark",
                                     "dateRange": "12M",
                                     "showChart": true,
                                     "locale": "en",
@@ -241,13 +241,9 @@
                     <div class="col-md-3 dashboardright">
                         <h4 class="myupdate">Market Performance</h4>
                         <div class="row marketperformancerow">
-                            <input
-                              type="text"
-                              id="company-name-input"
-                              placeholder="Company name"
-                            />
+                            <input type="text" id="company-name-input" placeholder="Company name" />
                             <button class="btn btn-primary search-button">Search</button>
-                          </div>
+                        </div>
                         <div class="py-4">
                             <canvas id="myChart" style="width:100%;max-width:700px">
                         </div>
@@ -256,12 +252,11 @@
                             <div class="tradingview-widget-container">
                                 <div class="tradingview-widget-container__widget"></div>
                                 <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
-                                        rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
-                                            TradingView</span></a></div>
+                                        rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
                                 <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
                                     async>
                                     {
-                                        "colorTheme": "light",
+                                        "colorTheme": "dark",
                                         "dateRange": "12M",
                                         "showChart": true,
                                         "locale": "en",
@@ -405,21 +400,21 @@
                         <!-- Bottom Right  -->
                         <div class="tabsection">
                             <!-- TradingView Widget BEGIN -->
+                            <!-- TradingView Widget BEGIN -->
                             <div class="tradingview-widget-container">
                                 <div class="tradingview-widget-container__widget"></div>
                                 <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
-                                        rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
-                                            TradingView</span></a></div>
-                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
-                                    async>
+                                        rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
                                     {
-                                        "colorTheme": "light",
+                                        "colorTheme": "dark",
                                         "dateRange": "12M",
+                                        "exchange": "US",
                                         "showChart": true,
                                         "locale": "en",
                                         "largeChartUrl": "",
                                         "isTransparent": false,
-                                        "showSymbolLogo": true,
+                                        "showSymbolLogo": false,
                                         "showFloatingTooltip": false,
                                         "width": "100%",
                                         "height": "660",
@@ -429,129 +424,13 @@
                                         "scaleFontColor": "rgba(106, 109, 120, 1)",
                                         "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
                                         "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
-                                        "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                                        "belowLineFillColorGrowingBottom": "rgba(0, 0, 0, 0)",
                                         "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
-                                        "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
-                                        "tabs": [{
-                                                "title": "Indices",
-                                                "symbols": [{
-                                                        "s": "FOREXCOM:SPXUSD",
-                                                        "d": "S&P 500"
-                                                    },
-                                                    {
-                                                        "s": "FOREXCOM:NSXUSD",
-                                                        "d": "US 100"
-                                                    },
-                                                    {
-                                                        "s": "FOREXCOM:DJI",
-                                                        "d": "Dow 30"
-                                                    },
-                                                    {
-                                                        "s": "INDEX:NKY",
-                                                        "d": "Nikkei 225"
-                                                    },
-                                                    {
-                                                        "s": "INDEX:DEU40",
-                                                        "d": "DAX Index"
-                                                    },
-                                                    {
-                                                        "s": "FOREXCOM:UKXGBP",
-                                                        "d": "UK 100"
-                                                    }
-                                                ],
-                                                "originalTitle": "Indices"
-                                            },
-                                            {
-                                                "title": "Futures",
-                                                "symbols": [{
-                                                        "s": "CME_MINI:ES1!",
-                                                        "d": "S&P 500"
-                                                    },
-                                                    {
-                                                        "s": "CME:6E1!",
-                                                        "d": "Euro"
-                                                    },
-                                                    {
-                                                        "s": "COMEX:GC1!",
-                                                        "d": "Gold"
-                                                    },
-                                                    {
-                                                        "s": "NYMEX:CL1!",
-                                                        "d": "Crude Oil"
-                                                    },
-                                                    {
-                                                        "s": "NYMEX:NG1!",
-                                                        "d": "Natural Gas"
-                                                    },
-                                                    {
-                                                        "s": "CBOT:ZC1!",
-                                                        "d": "Corn"
-                                                    }
-                                                ],
-                                                "originalTitle": "Futures"
-                                            },
-                                            {
-                                                "title": "Bonds",
-                                                "symbols": [{
-                                                        "s": "CME:GE1!",
-                                                        "d": "Eurodollar"
-                                                    },
-                                                    {
-                                                        "s": "CBOT:ZB1!",
-                                                        "d": "T-Bond"
-                                                    },
-                                                    {
-                                                        "s": "CBOT:UB1!",
-                                                        "d": "Ultra T-Bond"
-                                                    },
-                                                    {
-                                                        "s": "EUREX:FGBL1!",
-                                                        "d": "Euro Bund"
-                                                    },
-                                                    {
-                                                        "s": "EUREX:FBTP1!",
-                                                        "d": "Euro BTP"
-                                                    },
-                                                    {
-                                                        "s": "EUREX:FGBM1!",
-                                                        "d": "Euro BOBL"
-                                                    }
-                                                ],
-                                                "originalTitle": "Bonds"
-                                            },
-                                            {
-                                                "title": "Forex",
-                                                "symbols": [{
-                                                        "s": "FX:EURUSD",
-                                                        "d": "EUR/USD"
-                                                    },
-                                                    {
-                                                        "s": "FX:GBPUSD",
-                                                        "d": "GBP/USD"
-                                                    },
-                                                    {
-                                                        "s": "FX:USDJPY",
-                                                        "d": "USD/JPY"
-                                                    },
-                                                    {
-                                                        "s": "FX:USDCHF",
-                                                        "d": "USD/CHF"
-                                                    },
-                                                    {
-                                                        "s": "FX:AUDUSD",
-                                                        "d": "AUD/USD"
-                                                    },
-                                                    {
-                                                        "s": "FX:USDCAD",
-                                                        "d": "USD/CAD"
-                                                    }
-                                                ],
-                                                "originalTitle": "Forex"
-                                            }
-                                        ]
+                                        "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
                                     }
                                 </script>
                             </div>
+                            <!-- TradingView Widget END -->
                             <!-- TradingView Widget END -->
                         </div>
                     </div>
@@ -566,31 +445,31 @@
     @endauth
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $(document).ready(function() {
-    // Function to filter the followstock rows based on input value
-    function filterStocks() {
-      var inputVal = $("#company-name-input").val().toUpperCase();
-      $(".followstocks .followstockleft h4").each(function() {
-        var stockName = $(this).text().toUpperCase();
-        var row = $(this).closest(".followstockleft").parent();
-        if (stockName.indexOf(inputVal) > -1) {
-          row.show();
-        } else {
-          row.hide();
-        }
-      });
-    }
+    <script>
+        $(document).ready(function() {
+            // Function to filter the followstock rows based on input value
+            function filterStocks() {
+                var inputVal = $("#company-name-input").val().toUpperCase();
+                $(".followstocks .followstockleft h4").each(function() {
+                    var stockName = $(this).text().toUpperCase();
+                    var row = $(this).closest(".followstockleft").parent();
+                    if (stockName.indexOf(inputVal) > -1) {
+                        row.show();
+                    } else {
+                        row.hide();
+                    }
+                });
+            }
 
-    // Call the filterStocks function when the search button is clicked
-    $(".search-button").on("click", function() {
-      filterStocks();
-    });
+            // Call the filterStocks function when the search button is clicked
+            $(".search-button").on("click", function() {
+                filterStocks();
+            });
 
-    // Call the filterStocks function when the user types in the input field
-    $("#company-name-input").on("keyup", function() {
-      filterStocks();
-    });
-  });
-</script>
+            // Call the filterStocks function when the user types in the input field
+            $("#company-name-input").on("keyup", function() {
+                filterStocks();
+            });
+        });
+    </script>
 @endsection
