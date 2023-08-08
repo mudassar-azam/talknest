@@ -35,7 +35,7 @@
 					<div class="about-one_image-column col-lg-5 col-md-12 col-sm-12">
 						<div class="about-one_image-inner">
 							<div class="about-one_image">
-								<img src="assets/images/about.jpeg" alt="" />
+								<img src="{{asset('assets/images/about.jpeg')}}" alt="" />
 							</div>
 						</div>
 					</div>
@@ -58,7 +58,7 @@
                 <div class="testimonial-one_image-column col-lg-6 col-md-12 col-sm-12">
 					<div class="testimonial-one_image-inner">
 						<div class="testimonial-one_image">
-							<img src="assets/images/about2.jpg" alt="" />
+							<img src="{{asset('assets/images/about2.jpg')}}" alt="" />
 						</div>
 					</div>
 				</div>
@@ -106,7 +106,7 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 py-3">
                         <!-- Card-->
                         <div class="card shadow-sm border-0 rounded">
-                            <div class="card-body p-0"><img src="assets/images/giphy.gif" alt=""
+                            <div class="card-body p-0"><img src="{{asset('assets/images/giphy.gif')}}" alt=""
                                     class="w-100 card-img-top">
                                 <div class="p-4" style="height: 135px;">
                                     <h5 class="mb-0">Find compelling investments</h5>
@@ -118,7 +118,7 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 py-3">
                         <!-- Card-->
                         <div class="card  shadow-sm border-0 rounded">
-                            <div class="card-body p-0"><img src="assets/images/home/stock5.jpg" alt=""
+                            <div class="card-body p-0"><img src="{{asset('assets/images/home/stock5.jpg')}}" alt=""
                                     class="w-100 card-img-top">
                                 <div class="p-4" style="height: 135px;">
                                     <h5 class="mb-0">Keep track of your investments</h5>
@@ -130,7 +130,7 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 py-3">
                         <!-- Card-->
                         <div class="card shadow-sm border-0 rounded">
-                            <div class="card-body p-0"><img src="assets/images/home/threestock.jpg" alt=""
+                            <div class="card-body p-0"><img src="{{asset('assets/images/home/threestock.jpg')}}" alt=""
                                     class="w-100 card-img-top">
                                 <div class="p-4" style="height: 135px;">
                                     <h5 class="mb-0">Stay in the know and conversation of your favorite stocks</h5>
@@ -142,7 +142,7 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 py-3">
                         <!-- Card-->
                         <div class="card shadow-sm border-0 rounded">
-                            <div class="card-body p-0"><img src="assets/images/home/fourstock.jpg" alt=""
+                            <div class="card-body p-0"><img src="{{asset('assets/images/home/fourstock.jpg')}}" alt=""
                                     class="w-100 card-img-top">
                                 <div class="p-4" style="height: 135px;">
                                     <h5 class="mb-0">Remain updated on price-moving news</h5>

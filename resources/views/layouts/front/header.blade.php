@@ -47,7 +47,6 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                             <!-- Mobile Navigation Toggler -->
                             <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
 
-
                             <!-- Logo -->
                             <div class="logo">
                                 <a href="{{url('/')}}" title=""><img src="{{asset('assets/images/logo.png')}}" alt=""
@@ -87,19 +86,21 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                             <!-- Main Menu End-->
 
                             <div class="outer-box d-flex align-items-center">
-
                                 <!-- Search Box -->
-                                <div class="search-box-outer">
+                                {{-- <div class="search-box-outer">
                                     <div class="search-box-btn">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <!-- Cart Box -->
                                 <!-- <div class="cart-box">
                                     <a class="cart fa-solid fa-cart-plus fa-fw" href="contact.html"></a>
                                 </div> -->
                                 @if(Auth::check())
+                                <div class="cart-box">
+                                   <a href="{{url('chatify')}}"><i class="fa-regular fa-message fa-xl"></i></a>
+                                </div>
                                 <div class="cart-box">
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf
@@ -159,9 +160,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
                                 <!-- Mobile Navigation Toggler -->
                                 <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -192,6 +191,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                     <div class="outer-box d-flex align-items-center">
 
                                 @if(Auth::check())
+                                <div class="cart-box">
+                                    <a href="{{url('chatify')}}"><i class="fa-regular fa-message fa-xl"></i></a>
+                                 </div>
                                 <div class="cart-box">
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf

@@ -6,13 +6,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>TalkNest</title>
-    <link rel="stylesheet" href="adminassets/vendors/mdi/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="adminassets/vendors/flag-icon-css/css/flag-icon.min.css" />
-    <link rel="stylesheet" href="adminassets/vendors/css/vendor.bundle.base.css" />
-    <link rel="stylesheet" href="adminassets/vendors/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="adminassets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
-    <link rel="stylesheet" href="adminassets/css/style.css" />
-    <link rel="shortcut icon" href="adminassets/images/favicon.png" />
+    <link rel="stylesheet" href="{{asset('adminassets/vendors/mdi/css/materialdesignicons.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('adminassets/vendors/flag-icon-css/css/flag-icon.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('adminassets/vendors/css/vendor.bundle.base.css')}}" />
+    <link rel="stylesheet" href="{{asset('adminassets/vendors/font-awesome/css/font-awesome.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('adminassets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('adminassets/css/style.css')}}" />
+    <link rel="shortcut icon" href="{{asset('adminassets/images/favicon.png')}}" />
 
 </head>
 
@@ -20,16 +20,16 @@
     <div class="container-scroller">
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
-                <a class="sidebar-brand brand-logo" href="index.html"><img src="adminassets/images/logo.svg"
+                <a class="sidebar-brand brand-logo" href="index.html"><img src="{{asset('adminassets/images/logo.svg')}}"
                         alt="logo" /></a>
                 <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img
-                        src="adminassets/images/logo-mini.svg" alt="logo" /></a>
+                        src="{{asset('adminassets/images/logo-mini.svg')}}" alt="logo" /></a>
             </div>
             <ul class="nav">
                 <li class="nav-item nav-profile">
                     <a href="#" class="nav-link">
                         <div class="nav-profile-image">
-                            <img src="adminassets/images/faces/face1.jpg" alt="profile" />
+                            <img src="{{asset('adminassets/images/faces/face1.jpg')}}" alt="profile" />
                             <span class="login-status online"></span>
                             <!--change to offline or busy as needed-->
                         </div>
@@ -103,7 +103,7 @@
         <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
             <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
                 <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img
-                        src="adminassets/images/logo-mini.svg" alt="logo" /></a>
+                        src="{{asset('adminassets/images/logo-mini.svg')}}" alt="logo" /></a>
                 <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button"
                     data-toggle="minimize">
                     <i class="mdi mdi-menu"></i>
@@ -218,7 +218,7 @@
                         <a class="nav-link dropdown-toggle" id="profileDropdown" href="#"
                             data-toggle="dropdown">
                             <img class="nav-profile-img mr-2" alt=""
-                                src="adminassets/images/faces/face1.jpg" />
+                                src="{{asset('adminassets/images/faces/face1.jpg')}}" />
                             <span class="profile-name">{{auth()->user()->name}}</span>
                         </a>
                         <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">

@@ -9,7 +9,7 @@
         $sections = DB::table('onesections')->get();
         @endphp
         @foreach ($sections as $section)
-        
+
         <div class="slide">
 
             <div class="slider-one_pattern-layer" style="background-image:url({{asset('image')}}/{{$section->image}})">
@@ -17,7 +17,7 @@
             <!-- <video autoplay muted loop id="myVideo" class="slider-one_pattern-layer">
                 <source src="{{ asset('assets/images/Finance.mp4') }}" type="video/mp4">
                 Your browser does not support HTML5 video.
-            </video> -->  
+            </video> -->
             <!-- <div class="slider-one_pattern-layer1"></div>           -->
             <div class="auto-container slidercolumn">
 
@@ -65,7 +65,7 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 py-3">
                         <!-- Card-->
                         <div class="card shadow-sm border-0 rounded">
-                            <div class="card-body p-0"><img src="assets/images/giphy.gif" alt=""
+                            <div class="card-body p-0"><img src="{{asset('assets/images/giphy.gif')}}" alt=""
                                     class="w-100 card-img-top">
                                 <div class="p-4" style="height: 135px;">
                                     <h5 class="mb-0">Find compelling investments</h5>
@@ -77,7 +77,7 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 py-3">
                         <!-- Card-->
                         <div class="card  shadow-sm border-0 rounded">
-                            <div class="card-body p-0"><img src="assets/images/home/stock5.jpg" alt=""
+                            <div class="card-body p-0"><img src="{{asset('assets/images/home/stock5.jpg')}}" alt=""
                                     class="w-100 card-img-top">
                                 <div class="p-4" style="height: 135px;">
                                     <h5 class="mb-0">Keep track of your investments</h5>
@@ -89,7 +89,7 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 py-3">
                         <!-- Card-->
                         <div class="card shadow-sm border-0 rounded">
-                            <div class="card-body p-0"><img src="assets/images/home/threestock.jpg" alt=""
+                            <div class="card-body p-0"><img src="{{asset('assets/images/home/threestock.jpg')}}" alt=""
                                     class="w-100 card-img-top">
                                 <div class="p-4" style="height: 135px;">
                                     <h5 class="mb-0">Stay in the know and conversation of your favorite stocks</h5>
@@ -101,7 +101,7 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 py-3">
                         <!-- Card-->
                         <div class="card shadow-sm border-0 rounded">
-                            <div class="card-body p-0"><img src="assets/images/home/fourstock.jpg" alt=""
+                            <div class="card-body p-0"><img src="{{asset('assets/images/home/fourstock.jpg')}}" alt=""
                                     class="w-100 card-img-top">
                                 <div class="p-4" style="height: 135px;">
                                     <h5 class="mb-0">Remain updated on price-moving news</h5>
@@ -134,7 +134,7 @@
 
                     <div class="turntalkrow">
                         <div class="turnlefthead">
-                          <h3>Risk/Reward Analysis</h3>  
+                          <h3>Risk/Reward Analysis</h3>
                         </div>
                         <div class="turnleftcontent active">
                             Stay on top of the changing dynamics, positive and negative, of your companies within our
@@ -143,7 +143,7 @@
                     </div>
       <div class="turntalkrow">
                         <div class="turnlefthead">
-                       <h3>Growth Outlook</h3> 
+                       <h3>Growth Outlook</h3>
                         </div>
                         <div class="turnleftcontent">
                             Stay on top of the changing dynamics, positive and negative, of your companies within our
@@ -208,8 +208,8 @@
     <div class="row py-5 findcomponiestwoparts">
         <div class="col-md-6 d-flex flex-column justify-content-center myboximage" >
         <img src="{{asset('assets/images/home/greenborderi.png')}}"  alt="">
-          
-           
+
+
         </div>
         <div class="col-md-6 d-flex justify-content-center">
         <p>Living in the information age means that our lives and net worth are constantly impacted by the flow of global news, financial data, and social media. This information, regardless of whether it’s true or accurate, is transmitted blazingly fast across a mind-blowing array of technology platforms. The ability to recognize the impact of this information and intelligently act on it presents a significant challenge for investors. We believe that those who face this challenge with powerful tools and conviction will perform better in this digital age than those who don’t.</p>
@@ -219,23 +219,23 @@
 
        <div class="row findcompaniesThirdPart">
         <div class="container">
-            <h2>Manage your portfolio and nimbly tweak your <br /> strategy for optimal performance.</h2>	
+            <h2>Manage your portfolio and nimbly tweak your <br /> strategy for optimal performance.</h2>
             <p>Track gains, losses, and currency fluctuations across your entire portfolio.</p>
-            <p>Quickly and intelligently grasp a high-level view of your overall performance, risk exposure, and allocation weighting. Drill down for details and make adjustments as you see fit.</p>	
+            <p>Quickly and intelligently grasp a high-level view of your overall performance, risk exposure, and allocation weighting. Drill down for details and make adjustments as you see fit.</p>
         </div>
     </div>
 
     <svg class="findcompaniesSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#61B2AF" fill-opacity="1" d="M0,128L288,192L576,96L864,96L1152,0L1440,32L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
-        
+
     <div class="findcompaniesForthPart">
         <div class="container">
-            <h2>Stay on top of key moves in your companies including price-moving news, company events, and announcements.</h2>	
-            <p>The TalkNest Dashboard provides a real-time look at relevant updates and news about the companies you hold.</p>	
-        </div>  
+            <h2>Stay on top of key moves in your companies including price-moving news, company events, and announcements.</h2>
+            <p>The TalkNest Dashboard provides a real-time look at relevant updates and news about the companies you hold.</p>
+        </div>
     </div>
 
 
-    
+
 </div>
 
 
@@ -311,7 +311,7 @@
                             <div class="about-one_experiance">Years of <br> experiences</div>
                         </div>
                         <div class="about-one_image">
-                            <img src="assets/images/resource/about.jpg" alt="" />
+                            <img src="{{asset('assets/images/resource/about.jpg')}}" alt="" />
                         </div>
                     </div>
                 </div>
@@ -332,7 +332,7 @@
                 <div class="process-one_block">
                     <div class="process-one_block-inner">
                         <div class="process-one_image">
-                            <img src="assets/images/resource/process-1.png" alt="" />
+                            <img src="{{asset('assets/images/resource/process-1.png')}}" alt="" />
                         </div>
                         <div class="process-one_year">2010</div>
                         <h5 class="process-one_heading">Started business</h5>
@@ -345,7 +345,7 @@
                 <div class="process-one_block">
                     <div class="process-one_block-inner">
                         <div class="process-one_image">
-                            <img src="assets/images/resource/process-2.png" alt="" />
+                            <img src="{{asset('assets/images/resource/process-2.png')}}" alt="" />
                         </div>
                         <div class="process-one_year style-two">2012</div>
                         <h5 class="process-one_heading">Survival during wartime</h5>
@@ -358,7 +358,7 @@
                 <div class="process-one_block">
                     <div class="process-one_block-inner">
                         <div class="process-one_image">
-                            <img src="assets/images/resource/process-3.png" alt="" />
+                            <img src="{{asset('assets/images/resource/process-3.png')}}" alt="" />
                         </div>
                         <div class="process-one_year style-three">2016</div>
                         <h5 class="process-one_heading">Crisis and opportunity</h5>
@@ -371,7 +371,7 @@
                 <div class="process-one_block">
                     <div class="process-one_block-inner">
                         <div class="process-one_image">
-                            <img src="assets/images/resource/process-4.png" alt="" />
+                            <img src="{{asset('assets/images/resource/process-4.png')}}" alt="" />
                         </div>
                         <div class="process-one_year style-four">2017</div>
                         <h5 class="process-one_heading">Get Award</h5>
@@ -384,7 +384,7 @@
                 <div class="process-one_block">
                     <div class="process-one_block-inner">
                         <div class="process-one_image">
-                            <img src="assets/images/resource/process-1.png" alt="" />
+                            <img src="{{asset('assets/images/resource/process-1.png')}}" alt="" />
                         </div>
                         <div class="process-one_year">2010</div>
                         <h5 class="process-one_heading">Started business</h5>
@@ -397,7 +397,7 @@
                 <div class="process-one_block">
                     <div class="process-one_block-inner">
                         <div class="process-one_image">
-                            <img src="assets/images/resource/process-2.png" alt="" />
+                            <img src="{{asset('assets/images/resource/process-2.png')}}" alt="" />
                         </div>
                         <div class="process-one_year style-two">2012</div>
                         <h5 class="process-one_heading">Survival during wartime</h5>
@@ -410,7 +410,7 @@
                 <div class="process-one_block">
                     <div class="process-one_block-inner">
                         <div class="process-one_image">
-                            <img src="assets/images/resource/process-3.png" alt="" />
+                            <img src="{{asset('assets/images/resource/process-3.png')}}" alt="" />
                         </div>
                         <div class="process-one_year style-three">2016</div>
                         <h5 class="process-one_heading">Crisis and opportunity</h5>
@@ -423,7 +423,7 @@
                 <div class="process-one_block">
                     <div class="process-one_block-inner">
                         <div class="process-one_image">
-                            <img src="assets/images/resource/process-4.png" alt="" />
+                            <img src="{{asset('assets/images/resource/process-4.png')}}" alt="" />
                         </div>
                         <div class="process-one_year style-four">2017</div>
                         <h5 class="process-one_heading">Get Award</h5>
@@ -757,7 +757,7 @@
             <!-- Image Column -->
             <div class="progress-one_image-column col-lg-6 col-md-12 col-sm-12">
                 <div class="progress-one_image wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <img src="assets/images/resource/progress.png" alt="" />
+                    <img src="{{asset('assets/images/resource/progress.png')}}" alt="" />
                 </div>
             </div>
 
