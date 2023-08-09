@@ -170,14 +170,60 @@
                                     <h6>Tesla</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button onclick="showTeslaDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showTeslaDescription()"><i class="fa-regular fa-star"></i> Add to
+                                        watchlist</button>
                                 </div>
                                 <div id="dd-tesla" class="row my-3 py-3" style="display: none;color: white!important;">
                                     <div class="col-12" style="color: white!important;">
-                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ipsum libero. Nullam blandit magna vitae vehicula tempus. Aenean hendrerit metus at libero lacinia, vel blandit dolor auctor. Nullam tristique tortor vel dui placerat, eget iaculis libero fringilla.</p>
+                                        <p ><!-- TradingView Widget BEGIN -->
+                                            <div class="tradingview-widget-container">
+                                              <div class="tradingview-widget-container__widget"></div>
+                                              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                                              {
+                                              "symbols": [
+                                                [
+                                                  "NASDAQ:TSLA|1D"
+                                                ]
+                                              ],
+                                              "chartOnly": false,
+                                              "width": "550",
+                                              "height": 500,
+                                              "locale": "en",
+                                              "colorTheme": "dark",
+                                              "autosize": false,
+                                              "showVolume": false,
+                                              "showMA": false,
+                                              "hideDateRanges": false,
+                                              "hideMarketStatus": false,
+                                              "hideSymbolLogo": false,
+                                              "scalePosition": "right",
+                                              "scaleMode": "Normal",
+                                              "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                              "fontSize": "10",
+                                              "noTimeScale": false,
+                                              "valuesTracking": "1",
+                                              "changeMode": "price-and-percent",
+                                              "chartType": "area",
+                                              "maLineColor": "#2962FF",
+                                              "maLineWidth": 1,
+                                              "maLength": 9,
+                                              "lineWidth": 2,
+                                              "lineType": 0,
+                                              "dateRanges": [
+                                                "1d|1",
+                                                "1m|30",
+                                                "3m|60",
+                                                "12m|1D",
+                                                "60m|1W",
+                                                "all|1M"
+                                              ]
+                                            }
+                                              </script>
+                                            </div>
+                                            <!-- TradingView Widget END --></p>
                                     </div>
                                 </div>
-                               
+
                             </div>
                             <div class="row my-3 border-top border-bottom py-3">
                                 <div class="col-8 followstockleft">
@@ -185,11 +231,57 @@
                                     <h6>Microsoft</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button onclick="showMicrosoftDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showMicrosoftDescription()"><i class="fa-regular fa-star"></i> Add to
+                                        watchlist</button>
                                 </div>
                                 <div id="dd-microsoft" class="row my-3 py-3" style="display: none;color: white!important;">
                                     <div class="col-12" style="color: white!important;">
-                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ipsum libero. Nullam blandit magna vitae vehicula tempus. Aenean hendrerit metus at libero lacinia, vel blandit dolor auctor. Nullam tristique tortor vel dui placerat, eget iaculis libero fringilla.</p>
+                                        <p><!-- TradingView Widget BEGIN -->
+                                            <div class="tradingview-widget-container">
+                                              <div class="tradingview-widget-container__widget"></div>
+                                              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                                              {
+                                              "symbols": [
+                                                [
+                                                  "NASDAQ:MSFT|1D"
+                                                ]
+                                              ],
+                                              "chartOnly": false,
+                                              "width": "550",
+                                              "height": 500,
+                                              "locale": "en",
+                                              "colorTheme": "dark",
+                                              "autosize": false,
+                                              "showVolume": false,
+                                              "showMA": false,
+                                              "hideDateRanges": false,
+                                              "hideMarketStatus": false,
+                                              "hideSymbolLogo": false,
+                                              "scalePosition": "right",
+                                              "scaleMode": "Normal",
+                                              "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                              "fontSize": "10",
+                                              "noTimeScale": false,
+                                              "valuesTracking": "1",
+                                              "changeMode": "price-and-percent",
+                                              "chartType": "area",
+                                              "maLineColor": "#2962FF",
+                                              "maLineWidth": 1,
+                                              "maLength": 9,
+                                              "lineWidth": 2,
+                                              "lineType": 0,
+                                              "dateRanges": [
+                                                "1d|1",
+                                                "1m|30",
+                                                "3m|60",
+                                                "12m|1D",
+                                                "60m|1W",
+                                                "all|1M"
+                                              ]
+                                            }
+                                              </script>
+                                            </div>
+                                            <!-- TradingView Widget END --></p>
                                     </div>
                                 </div>
                             </div>
@@ -199,11 +291,57 @@
                                     <h6>Berkshire Hathaway</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button onclick="showHathawayDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showHathawayDescription()"><i class="fa-regular fa-star"></i> Add to
+                                        watchlist</button>
                                 </div>
                                 <div id="dd-hathaway" class="row my-3 py-3" style="display: none;color: white!important;">
                                     <div class="col-12" style="color: white!important;">
-                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ipsum libero. Nullam blandit magna vitae vehicula tempus. Aenean hendrerit metus at libero lacinia, vel blandit dolor auctor. Nullam tristique tortor vel dui placerat, eget iaculis libero fringilla.</p>
+                                        <p><!-- TradingView Widget BEGIN -->
+                                            <div class="tradingview-widget-container">
+                                              <div class="tradingview-widget-container__widget"></div>
+                                              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                                              {
+                                              "symbols": [
+                                                [
+                                                  "NYSE:BRK.A|1D"
+                                                ]
+                                              ],
+                                              "chartOnly": false,
+                                              "width": "550",
+                                              "height": 500,
+                                              "locale": "en",
+                                              "colorTheme": "dark",
+                                              "autosize": false,
+                                              "showVolume": false,
+                                              "showMA": false,
+                                              "hideDateRanges": false,
+                                              "hideMarketStatus": false,
+                                              "hideSymbolLogo": false,
+                                              "scalePosition": "right",
+                                              "scaleMode": "Normal",
+                                              "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                              "fontSize": "10",
+                                              "noTimeScale": false,
+                                              "valuesTracking": "1",
+                                              "changeMode": "price-and-percent",
+                                              "chartType": "area",
+                                              "maLineColor": "#2962FF",
+                                              "maLineWidth": 1,
+                                              "maLength": 9,
+                                              "lineWidth": 2,
+                                              "lineType": 0,
+                                              "dateRanges": [
+                                                "1d|1",
+                                                "1m|30",
+                                                "3m|60",
+                                                "12m|1D",
+                                                "60m|1W",
+                                                "all|1M"
+                                              ]
+                                            }
+                                              </script>
+                                            </div>
+                                            <!-- TradingView Widget END --></p>
                                     </div>
                                 </div>
                             </div>
@@ -213,11 +351,57 @@
                                     <h6>Vanguard Index Funds - Vanguard Total Stock Market ETF</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button onclick="showVanguardDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showVanguardDescription()"><i class="fa-regular fa-star"></i> Add to
+                                        watchlist</button>
                                 </div>
                                 <div id="dd-vanguard" class="row my-3 py-3" style="display: none;color: white!important;">
                                     <div class="col-12" style="color: white!important;">
-                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ipsum libero. Nullam blandit magna vitae vehicula tempus. Aenean hendrerit metus at libero lacinia, vel blandit dolor auctor. Nullam tristique tortor vel dui placerat, eget iaculis libero fringilla.</p>
+                                        <p><!-- TradingView Widget BEGIN -->
+                                            <div class="tradingview-widget-container">
+                                              <div class="tradingview-widget-container__widget"></div>
+                                              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                                              {
+                                              "symbols": [
+                                                [
+                                                  "EIGHTCAP:VTS|1D"
+                                                ]
+                                              ],
+                                              "chartOnly": false,
+                                              "width": "550",
+                                              "height": "500",
+                                              "locale": "en",
+                                              "colorTheme": "dark",
+                                              "autosize": false,
+                                              "showVolume": false,
+                                              "showMA": false,
+                                              "hideDateRanges": false,
+                                              "hideMarketStatus": false,
+                                              "hideSymbolLogo": false,
+                                              "scalePosition": "right",
+                                              "scaleMode": "Normal",
+                                              "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                              "fontSize": "10",
+                                              "noTimeScale": false,
+                                              "valuesTracking": "1",
+                                              "changeMode": "price-and-percent",
+                                              "chartType": "area",
+                                              "maLineColor": "#2962FF",
+                                              "maLineWidth": 1,
+                                              "maLength": 9,
+                                              "lineWidth": 2,
+                                              "lineType": 0,
+                                              "dateRanges": [
+                                                "1d|1",
+                                                "1m|30",
+                                                "3m|60",
+                                                "12m|1D",
+                                                "60m|1W",
+                                                "all|1M"
+                                              ]
+                                            }
+                                              </script>
+                                            </div>
+                                            <!-- TradingView Widget END --></p>
                                     </div>
                                 </div>
                             </div>
@@ -227,11 +411,57 @@
                                     <h6>Alphabet</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button onclick="showGoogleDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showGoogleDescription()"><i class="fa-regular fa-star"></i> Add to
+                                        watchlist</button>
                                 </div>
                                 <div id="dd-google" class="row my-3 py-3" style="display: none;color: white!important;">
                                     <div class="col-12" style="color: white!important;">
-                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p><!-- TradingView Widget BEGIN -->
+                                            <div class="tradingview-widget-container">
+                                              <div class="tradingview-widget-container__widget"></div>
+                                              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                                              {
+                                              "symbols": [
+                                                [
+                                                  "NASDAQ:GOOGL|1D"
+                                                ]
+                                              ],
+                                              "chartOnly": false,
+                                              "width": "550",
+                                              "height": 500,
+                                              "locale": "en",
+                                              "colorTheme": "dark",
+                                              "autosize": false,
+                                              "showVolume": false,
+                                              "showMA": false,
+                                              "hideDateRanges": false,
+                                              "hideMarketStatus": false,
+                                              "hideSymbolLogo": false,
+                                              "scalePosition": "right",
+                                              "scaleMode": "Normal",
+                                              "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                              "fontSize": "10",
+                                              "noTimeScale": false,
+                                              "valuesTracking": "1",
+                                              "changeMode": "price-and-percent",
+                                              "chartType": "area",
+                                              "maLineColor": "#2962FF",
+                                              "maLineWidth": 1,
+                                              "maLength": 9,
+                                              "lineWidth": 2,
+                                              "lineType": 0,
+                                              "dateRanges": [
+                                                "1d|1",
+                                                "1m|30",
+                                                "3m|60",
+                                                "12m|1D",
+                                                "60m|1W",
+                                                "all|1M"
+                                              ]
+                                            }
+                                              </script>
+                                            </div>
+                                            <!-- TradingView Widget END --></p>
                                     </div>
                                 </div>
                             </div>
@@ -241,11 +471,60 @@
                                     <h6>Apple</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button onclick="showAppleDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showAppleDescription()"><i class="fa-regular fa-star"></i> Add to
+                                        watchlist</button>
                                 </div>
                                 <div id="dd-apple" class="row my-3 py-3" style="display: none;color: white!important;">
                                     <div class="col-12" style="color: white!important;">
-                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p>
+                                            <!-- TradingView Widget BEGIN -->
+                                        <div class="tradingview-widget-container">
+                                            <div class="tradingview-widget-container__widget"></div>
+                                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+                                                async>
+                                                {
+                                                    "symbols": [
+                                                        [
+                                                            "Apple",
+                                                            "AAPL|1D"
+                                                        ]
+                                                    ],
+                                                    "chartOnly": false,
+                                                    "width": "550",
+                                                    "height": 500,
+                                                    "locale": "en",
+                                                    "colorTheme": "dark",
+                                                    "autosize": false,
+                                                    "showVolume": false,
+                                                    "showMA": false,
+                                                    "hideDateRanges": false,
+                                                    "hideMarketStatus": false,
+                                                    "hideSymbolLogo": false,
+                                                    "scalePosition": "right",
+                                                    "scaleMode": "Normal",
+                                                    "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                                    "fontSize": "10",
+                                                    "noTimeScale": false,
+                                                    "valuesTracking": "1",
+                                                    "changeMode": "price-and-percent",
+                                                    "chartType": "area",
+                                                    "maLineColor": "#2962FF",
+                                                    "maLineWidth": 1,
+                                                    "maLength": 9,
+                                                    "lineWidth": 2,
+                                                    "lineType": 0,
+                                                    "dateRanges": [
+                                                        "1d|1",
+                                                        "1m|30",
+                                                        "3m|60",
+                                                        "12m|1D",
+                                                        "60m|1W",
+                                                        "all|1M"
+                                                    ]
+                                                }
+                                            </script>
+                                        </div>
+                                        <!-- TradingView Widget END --></p>
                                     </div>
                                 </div>
                             </div>
@@ -255,11 +534,57 @@
                                     <h6>Amazon.com</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button onclick="showAmazonDescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showAmazonDescription()"><i class="fa-regular fa-star"></i> Add to
+                                        watchlist</button>
                                 </div>
                                 <div id="dd-amazon" class="row my-3 py-3" style="display: none;color: white!important;">
                                     <div class="col-12" style="color: white!important;">
-                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p><!-- TradingView Widget BEGIN -->
+                                            <div class="tradingview-widget-container">
+                                              <div class="tradingview-widget-container__widget"></div>
+                                              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                                              {
+                                              "symbols": [
+                                                [
+                                                  "NASDAQ:AMZN|1D"
+                                                ]
+                                              ],
+                                              "chartOnly": false,
+                                              "width": "550",
+                                              "height": 500,
+                                              "locale": "en",
+                                              "colorTheme": "dark",
+                                              "autosize": false,
+                                              "showVolume": false,
+                                              "showMA": false,
+                                              "hideDateRanges": false,
+                                              "hideMarketStatus": false,
+                                              "hideSymbolLogo": false,
+                                              "scalePosition": "right",
+                                              "scaleMode": "Normal",
+                                              "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                              "fontSize": "10",
+                                              "noTimeScale": false,
+                                              "valuesTracking": "1",
+                                              "changeMode": "price-and-percent",
+                                              "chartType": "area",
+                                              "maLineColor": "#2962FF",
+                                              "maLineWidth": 1,
+                                              "maLength": 9,
+                                              "lineWidth": 2,
+                                              "lineType": 0,
+                                              "dateRanges": [
+                                                "1d|1",
+                                                "1m|30",
+                                                "3m|60",
+                                                "12m|1D",
+                                                "60m|1W",
+                                                "all|1M"
+                                              ]
+                                            }
+                                              </script>
+                                            </div>
+                                            <!-- TradingView Widget END --></p>
                                     </div>
                                 </div>
                             </div>
@@ -269,14 +594,60 @@
                                     <h6>Vanguard Index Funds - Vanguard S&P 500 ETF</h6>
                                 </div>
                                 <div class="col-4 followstockright">
-                                    <button onclick="showVOODescription()"><i class="fa-regular fa-star"></i> Add to watchlist</button>
+                                    <button onclick="showVOODescription()"><i class="fa-regular fa-star"></i> Add to
+                                        watchlist</button>
                                 </div>
                                 <div id="dd-voo" class="row my-3 py-3" style="display: none;color: white!important;">
                                     <div class="col-12" style="color: white!important;">
-                                        <p style="color: white!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p><!-- TradingView Widget BEGIN -->
+                                            <div class="tradingview-widget-container">
+                                              <div class="tradingview-widget-container__widget"></div>
+                                              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                                              {
+                                              "symbols": [
+                                                [
+                                                  "PYTH:VOO|1D"
+                                                ]
+                                              ],
+                                              "chartOnly": false,
+                                              "width": "550",
+                                              "height": "500",
+                                              "locale": "en",
+                                              "colorTheme": "dark",
+                                              "autosize": false,
+                                              "showVolume": false,
+                                              "showMA": false,
+                                              "hideDateRanges": false,
+                                              "hideMarketStatus": false,
+                                              "hideSymbolLogo": false,
+                                              "scalePosition": "right",
+                                              "scaleMode": "Normal",
+                                              "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                              "fontSize": "10",
+                                              "noTimeScale": false,
+                                              "valuesTracking": "1",
+                                              "changeMode": "price-and-percent",
+                                              "chartType": "area",
+                                              "maLineColor": "#2962FF",
+                                              "maLineWidth": 1,
+                                              "maLength": 9,
+                                              "lineWidth": 2,
+                                              "lineType": 0,
+                                              "dateRanges": [
+                                                "1d|1",
+                                                "1m|30",
+                                                "3m|60",
+                                                "12m|1D",
+                                                "60m|1W",
+                                                "all|1M"
+                                              ]
+                                            }
+                                              </script>
+                                            </div>
+                                            <!-- TradingView Widget END --></p>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -289,19 +660,19 @@
                                 loremSection.style.display = "block";
                             }
                         }
-                        
+
                         function showTeslaDescription() {
                             showLorem("dd-tesla");
                         }
-                        
+
                         function showMicrosoftDescription() {
                             showLorem("dd-microsoft");
                         }
-                        
+
                         function showHathawayDescription() {
                             showLorem("dd-hathaway");
                         }
-                        
+
                         function showVanguardDescription() {
                             showLorem("dd-vanguard");
                         }
@@ -309,22 +680,19 @@
                         function showGoogleDescription() {
                             showLorem("dd-google");
                         }
-                        
+
                         function showAppleDescription() {
                             showLorem("dd-apple");
                         }
-                        
+
                         function showAmazonDescription() {
                             showLorem("dd-amazon");
                         }
-                        dd-vanguard
+                        dd - vanguard
+
                         function showVOODescription() {
                             showLorem("dd-voo");
                         }
-                        
-                        
-                        
-                        
                     </script>
                     <div class="col-md-3 dashboardright">
                         <h4 class="myupdate">Market Performance</h4>
