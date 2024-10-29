@@ -3,32 +3,73 @@
 return [
 
     /*
-    |--------------------------------------------------------------------------
-    | Cross-Origin Resource Sharing (CORS) Configuration
-    |--------------------------------------------------------------------------
-    |
-    | Here you may configure your settings for cross-origin resource sharing
-    | or "CORS". This determines what cross-origin operations may execute
-    | in web browsers. You are free to adjust these settings as needed.
-    |
-    | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-    |
-    */
+     * Paths that are exempt from CORS checks.
+     *
+     * @array
+     */
+    'paths' => [
+        public_path('api/*'),
+    ],
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    /*
+     * Allowed origins that may make requests.
+     *
+     * @array
+     */
+    'allowed_origins' => [
+        '*', // Allow requests from all origins (caution: use with care!)
+        // 'https://example.com',
+    ],
 
-    'allowed_methods' => ['*'],
+    /*
+     * Allowed HTTP methods for API requests.
+     *
+     * @array
+     */
+    'allowed_methods' => [
+        'GET',
+        'POST',
+        'PUT',
+        'PATCH',
+        'DELETE',
+        'OPTIONS',
+    ],
 
-    'allowed_origins' => ['*'],
+    /*
+     * Allowed HTTP headers for API requests.
+     *
+     * @array
+     */
+    'allowed_headers' => [
+        'Content-Type',
+        'X-Auth-Token',
+        'X-Requested-With',
+        'Accept',
+        'Authorization',
+    ],
 
-    'allowed_origins_patterns' => [],
+    /*
+     * Maximum age (in seconds) for the preflight OPTIONS request cache.
+     *
+     * @int
+     */
+    'max_age' => 3600,
 
-    'allowed_headers' => ['*'],
+    /*
+     * Expose the "public" option from the `Access-Control-Allow-Origin` header.
+     *
+     * @bool
+     */
+    'expose_headers' => [
 
-    'exposed_headers' => [],
+    ],
 
-    'max_age' => 0,
-
+    /*
+     * Whether the allowed origins should be listed as a single string in
+     * the header. When set to `false`, each origin is allowed separately.
+     *
+     * @bool
+     */
     'supports_credentials' => false,
 
 ];

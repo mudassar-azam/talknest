@@ -21,6 +21,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'image',
+        'cover_image',
     ];
 
     /**
@@ -41,4 +43,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+      public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
+
+    public function nests()
+    {
+        return $this->hasMany(Nest::class, 'admin_id');
+    }
+       public function nestPeople()
+    {
+        return $this->hasMany(NestPeople::class, 'user_id');
+    }
+     
+  
 }

@@ -2,19 +2,12 @@
 @section('content')
 @auth
 <div class="container-fluid profile">
-        <div class="container">
+        <div class="container"></br></br></br>
             <div class="row">
 				<div class="avatar-container">
-					<div class="profile-cover">
-						<div class="camera-button">
-							<div class="camera-icon"><i class="fa-solid fa-camera"></i></div>
-							<div class="message-box">Change Cover Photo</div>
-						</div>
+					<div class="avatar-container">
+						
 					</div>
-                    {{-- @php
-                        $filename = Auth()->user()->image;
-                        $filePath = 'storage/profileimage/' . $filename;
-                    @endphp --}}
                     <form id="uploadForm" enctype="multipart/form-data">
                         @csrf
                         <div id="profile-picture" class="profile-picture" style="background-image: url('{{ asset($filePath) }}');">
@@ -84,6 +77,7 @@ document.getElementById('image').addEventListener('change', function() {
                 icon: 'success',
                 confirmButtonText: 'OK'
             });
+            location.reload();
         } else {
             console.error('Image upload failed.');
         }

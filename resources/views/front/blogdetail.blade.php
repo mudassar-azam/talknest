@@ -11,14 +11,14 @@
                     <div class="blog-detail">
                         <div class="inner-box">
                             <div class="image">
-                                <img src="{{ asset('blogimage') }}/{{ $detail->feature_image }}" alt="" />
+                                <img src="{{ asset('blogphotos/'. $blog->feature_image) }}" alt="error" />
                                 <div class="post-date">{{ date('d', strtotime($detail->updated_at)) }}
                                     <span>{{ date('M Y', strtotime($detail->updated_at)) }}</span></div>
                             </div>
                             <div class="lower-content">
                                 <ul class="post-meta">
                                     <li>{{ $detail->posted_by }}</li>
-                                    <li>{{$count}} Comments</li>
+                                    <li>{{$commentsCount}} Comments</li>
                                 </ul>
 
                                 <h4>{{ $detail->heading }}</h4>
@@ -27,10 +27,15 @@
                                     <div class="row clearfix">
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <div class="image">
-                                                <img src="{{ asset('assets/images/resource/news-34.jpg') }}"
+                                                @php
+                                                    $images = \App\Models\Image::where('blog_id', $blog->id)->get();
+
+                                                @endphp
+
+                                                @foreach($images as $image)
+                                                <img src="{{ asset('blogphotos/' . $image->image) }}"
                                                     alt="" />
-                                                <img src="{{ asset('assets/images/resource/news-34.jpg') }}"
-                                                    alt="" />
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>
@@ -40,22 +45,9 @@
                         </div>
 
                         <!-- Comments Area -->
-                        @php
-                            $id = $detail->id;
-                            $blog = DB::table('blogs')
-                                ->where('id', $id)
-                                ->first();
-                            $comments = DB::table('comments')
-                                ->where('blog_id', $blog->id)
-                                ->get();
-
-                                $commentscount = DB::table('comments')
-                                ->where('blog_id', $blog->id)
-                                ->count();
-                        @endphp
                         <div class="comments-area">
                             <div class="group-title">
-                                <h5>Comment ({{$commentscount}})</h5>
+                                <h5>Comment ({{$commentsCount}})</h5>
                             </div>
                             <!-- Comment Box -->
                             @foreach ($comments as $comment)

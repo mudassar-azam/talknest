@@ -1,7 +1,8 @@
 @extends('layouts.front.main')
 @section('content')
 	<!-- Page Title -->
-    <section class="page-title" style="background-image:url(assets/images/background/5.jpg)">
+	<!--background-image:url(assets/images/background/5.jpg)-->
+    <section class="page-title" style="background: linear-gradient(90deg, rgba(105,177,255,1) 21%, rgba(0,105,217,1) 71%, rgba(178,210,244,1) 94%);">
         <div class="auto-container">
 			<h2>About Us</h2>
 			<ul class="bread-crumb clearfix">

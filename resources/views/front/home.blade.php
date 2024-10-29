@@ -767,34 +767,7 @@
 <!-- End Progress One -->
 
 <!-- Project One -->
-<section class="project-one">
-    <div class="auto-container">
 
-
-        <!-- Project One Block -->
-        @php
-        $posts = DB::table('categories')->get();
-        @endphp
-        <div class="row clearfix">
-            <div class="container py-5">
-                <div class="row pb-5 mb-4 justify-content-center project-one-scroll" >
-                    @foreach ($posts as $post)
-                    <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 py-3">
-                        <div class="card shadow-sm border-0 rounded">
-                            <div class="card-body p-0">
-                                <img src="{{ asset('catimage') }}/{{ $post->image }}" alt="" class="w-100 card-img-top">
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-
-
-
-    </div>
-</section>
 <!-- End Project One -->
 
 <section class="bottom-heading">

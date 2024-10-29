@@ -75,22 +75,17 @@ class RegisteredUserController extends Controller
 public function upload(Request $request)
 {
     if ($request->hasFile('image')) {
-        $image = $request->file('image');
-        $filename = time() . '.' . $image->getClientOriginalExtension();
-
-        $image->storeAs('public/profileimage', $filename);
-
+        $uploadedFile = $request->file('image');
+        $fileName = $uploadedFile->getClientOriginalName();
+        $uploadedFile->move(public_path(), $fileName);
         $user = Auth::user();
 
         // Delete the previous image if it exists
         if ($user->image) {
             Storage::delete('public/profileimage/' . $user->image);
         }
-
-        $user->image = $filename;
+        $user->image = $fileName;
         $user->save();
-
-        // Return success response
         return response()->json(['success' => true]);
     }
 

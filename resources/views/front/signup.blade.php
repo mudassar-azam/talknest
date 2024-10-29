@@ -7,7 +7,7 @@
           <div class="px-5 ms-xl-4">
             <img src="{{asset('assets/images/logo.png')}}" class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4">
           </div>
-
+</br></br></br>
           <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
             <form method="POST" action="{{ route('register') }}"  style="width: 23rem;">
                 @csrf
